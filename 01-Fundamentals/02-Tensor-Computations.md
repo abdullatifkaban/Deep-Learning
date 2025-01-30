@@ -26,18 +26,21 @@ $`
 
 ### 2. Skaler ile Çarpma
 Bir tensör, bir skaler ile çarpıldığında her eleman skalerle çarpılır:
+
 $`
 \mathcal{T} \cdot c = \mathcal{V}, \text{ burada } v_{ijk} = c \cdot t_{ijk}
 `$
 
 ### 3. Matris Çarpımı (İki Boyutlu Tensörler için)
 Matris çarpımı, satır ve sütunların iç çarpımına dayanır:
+
 $`
 \mathbf{C} = \mathbf{A} \cdot \mathbf{B}, \text{ burada } c_{ij} = \sum_k a_{ik} b_{kj}
 $$
 
 ### 4. Tensör Çarpımı (Genel Tensörler için)
 Daha yüksek boyutlu tensörlerde çarpım, belirli eksenlerde yapılır:
+    
 $`
 (\mathcal{T} \ast \mathcal{U})_{ij} = \sum_k t_{ik} u_{kj}
 `$
