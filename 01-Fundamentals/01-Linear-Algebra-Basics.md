@@ -13,11 +13,11 @@ Lineer cebir, vektörler ve matrisler gibi lineer (doğrusal) matematiksel yapı
 
 ### 2. Vektörler Üzerinde İşlemler
 - **Toplama:** İki vektör, eleman bazında toplanır:
-  $ \mathbf{u} + \mathbf{v} = [u_1 + v_1, u_2 + v_2, \dots] $
+  $`\mathbf{u} + \mathbf{v} = [u_1 + v_1, u_2 + v_2, \dots]`$
 - **Çıkarma:** İki vektör eleman bazında çıkarılır:
-  $$ \mathbf{u} - \mathbf{v} = [u_1 - v_1, u_2 - v_2, \dots] $$
+  $$\mathbf{u} - \mathbf{v} = [u_1 - v_1, u_2 - v_2, \dots]$$
 - **Skaler Çarpım:** Bir vektör, bir skalerle çarpılır:
-  $$ c \cdot \mathbf{v} = [c \cdot v_1, c \cdot v_2, \dots] $$
+  $$c \cdot \mathbf{v} = [c \cdot v_1, c \cdot v_2, \dots]$$
 
 ### 3. Matrisler
 - **Matris Toplama:**
