@@ -33,14 +33,17 @@ Biyolojik nöronların işleyişi, yapay sinir ağlarının temel modelini oluş
 - **Girişler \( x_1, x_2, ..., x_n \)**: Çevreden alınan veriler.
 - **Ağırlıklar \( w_1, w_2, ..., w_n \)**: Her girişin önemini belirleyen katsayılar.
 - **Net Girdi (Toplam Fonksiyon):**
-  $$
+
+  $`
   z = \sum_{i=1}^{n} w_i x_i + b
-  $$
+  `$
 - **Aktivasyon Fonksiyonu:** Çıktıyı sınırlayan ve modele doğrusal olmayan özellikler kazandıran matematiksel fonksiyon. Örnek:
-  $$
+
+  $`
   y = f(z)
-  $$
-  Burada \( f(z) \) yaygın olarak kullanılan sigmoid, ReLU veya tanh fonksiyonları olabilir.
+  `$
+
+  Burada $f(z)$ yaygın olarak kullanılan sigmoid, ReLU veya tanh fonksiyonları olabilir.
 
 ![Artificial Neuron](https://upload.wikimedia.org/wikipedia/commons/c/c6/Artificial_neuron_structure.svg)
 [Kaynak](https://upload.wikimedia.org/wikipedia/commons/c/c6/Artificial_neuron_structure.svg)
