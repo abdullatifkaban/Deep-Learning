@@ -19,9 +19,10 @@ Bir tensör genelde aşağıdaki şekillerde gösterilir:
 
 ### 1. Tensör Toplama
 Tensörlerin boyutları aynı olduğunda eleman bazında toplama yapılabilir:
-$$
+
+$`
 \mathcal{T} + \mathcal{U} = \mathcal{V}, \text{ burada } v_{ijk} = t_{ijk} + u_{ijk}
-$$
+`$
 
 ### 2. Skaler ile Çarpma
 Bir tensör, bir skaler ile çarpıldığında her eleman skalerle çarpılır:
