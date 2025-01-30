@@ -15,3 +15,4 @@ Kütüphane içinde örnek kod sayfaları oluştukça buraya ilgili belgelere ul
 - [Sinir Hücreleri ve Biyolojik İlham](02-Artificial-Neural-Networks/01-Biological-Neurons.md)
 - [Yapay Sinir Ağlarının Temel Yapısı](02-Artificial-Neural-Networks/02-ANN.md)
 - [Aktivasyon Fonksiyonları](02-Artificial-Neural-Networks/03-Activation-Functions.md)
+    * [Uygulama](02-Artificial-Neural-Networks/04-Activation_Functions.ipynb)
