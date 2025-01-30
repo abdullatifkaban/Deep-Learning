@@ -21,30 +21,30 @@ Lineer cebir, vektörler ve matrisler gibi lineer (doğrusal) matematiksel yapı
 
 ### 3. Matrisler
 - **Matris Toplama:**
-  $$ \mathbf{A} + \mathbf{B} = \begin{bmatrix} a_{11} + b_{11} & a_{12} + b_{12} \\ a_{21} + b_{21} & a_{22} + b_{22} \end{bmatrix} $$
+  $$\mathbf{A} + \mathbf{B} = \begin{bmatrix} a_{11} + b_{11} & a_{12} + b_{12} \\ a_{21} + b_{21} & a_{22} + b_{22} \end{bmatrix}$$
 - **Skaler Çarpma:**
-  $$ c \cdot \mathbf{A} = \begin{bmatrix} c \cdot a_{11} & c \cdot a_{12} \\ c \cdot a_{21} & c \cdot a_{22} \end{bmatrix} $$
+  $$c \cdot \mathbf{A} = \begin{bmatrix} c \cdot a_{11} & c \cdot a_{12} \\ c \cdot a_{21} & c \cdot a_{22} \end{bmatrix}$$
 - **Matris Çarpımı:**
-  $$ \mathbf{C} = \mathbf{A} \cdot \mathbf{B}, \text{ burada } c_{ij} = \sum_k a_{ik} b_{kj} $$
+  $$\mathbf{C} = \mathbf{A} \cdot \mathbf{B}, \text{ burada } c_{ij} = \sum_k a_{ik} b_{kj}$$
 
 ### 4. Doğrusal Bağımlılık ve Bağımsızlık
 - Bir grup vektör, doğrusal olarak bağımsızdır eğer:
-  $$ c_1 \mathbf{v}_1 + c_2 \mathbf{v}_2 + \dots + c_n \mathbf{v}_n = \mathbf{0} $$
+  $$c_1 \mathbf{v}_1 + c_2 \mathbf{v}_2 + \dots + c_n \mathbf{v}_n = \mathbf{0}$$
   eşitliği sadece $c_1 = c_2 = \dots = c_n = 0$ olduğunda sağlanır.
 
 ### 5. Matris Determinantı
 - Kare matrisler için tanımlıdır ve şu şekilde hesaplanır:
-  $$ \det(\mathbf{A}) = a_{11}a_{22} - a_{12}a_{21} \text{ (2x2 matrisler için)} $$
+  $$\det(\mathbf{A}) = a_{11}a_{22} - a_{12}a_{21} \text{ (2x2 matrisler için)}$$
 
 ### 6. Ters Matris
 - Bir kare matrisin tersi $\mathbf{A}^{-1}$, şu koşulu sağlar:
-  $$ \mathbf{A} \cdot \mathbf{A}^{-1} = \mathbf{I} $$
+  $$\mathbf{A} \cdot \mathbf{A}^{-1} = \mathbf{I}$$
 - Tersi bulmak için:
-  $$ \mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})} \begin{bmatrix} a_{22} & -a_{12} \\ -a_{21} & a_{11} \end{bmatrix} \text{ (2x2 matrisler için)} $$
+  $$\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})} \begin{bmatrix} a_{22} & -a_{12} \\ -a_{21} & a_{11} \end{bmatrix} \text{ (2x2 matrisler için)}$$
 
 ### 7. Özvektörler ve Özdeğerler
 - $\mathbf{A}$ bir kare matris olsun. $\mathbf{v}$ bir özvektör ve $\lambda$ bir özdeğer olacak şekilde şu eşitlik sağlanır:
-  $$ \mathbf{A} \mathbf{v} = \lambda \mathbf{v} $$
+  $$\mathbf{A} \mathbf{v} = \lambda \mathbf{v}$$
 
 ## Lineer Cebirin Derin Öğrenmedeki Önemi
 1. **Veri Temsili:** Görüntüler, metinler ve ses gibi veriler tensörlerle temsil edilir.
