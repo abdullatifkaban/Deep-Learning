@@ -8,7 +8,7 @@ Lineer cebir, vektörler ve matrisler gibi lineer (doğrusal) matematiksel yapı
 ### 1. Skaler, Vektör, Matris ve Tensör
 - **Skaler:** Tek bir sayı (örneğin, $x = 5$).
 - **Vektör:** Bir sayı dizisi, bir boyutlu dizi (örneğin, $\mathbf{v} = [1, 2, 3]$).
-- **Matris:** Bir sayı tablosu, iki boyutlu dizi (örneğin, $\mathbf{A} = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$).
+- **Matris:** Bir sayı tablosu, iki boyutlu dizi (örneğin, $`\mathbf{A} = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}`$).
 - **Tensör:** Daha yüksek boyutlu diziler.
 
 ### 2. Vektörler Üzerinde İşlemler
