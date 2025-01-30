@@ -13,6 +13,7 @@ Bir sinir hücresi temel olarak üç ana bileşenden oluşur:
 Bu yapı sayesinde nöronlar, elektriksel ve kimyasal sinyaller aracılığıyla birbirleriyle iletişim kurarlar.
 
 ![Biyilogical neurons](https://miro.medium.com/v2/resize:fit:1400/1*K1ee1SzB0lxjIIo7CGI7LQ.png) 
+
 [Kaynak](https://miro.medium.com/v2/resize:fit:1400/1*K1ee1SzB0lxjIIo7CGI7LQ.png)
 
 ## 2. Nöronların Çalışma Mekanizması
@@ -46,6 +47,7 @@ Biyolojik nöronların işleyişi, yapay sinir ağlarının temel modelini oluş
   Burada $f(z)$ yaygın olarak kullanılan sigmoid, ReLU veya tanh fonksiyonları olabilir.
 
 ![Artificial Neuron](https://upload.wikimedia.org/wikipedia/commons/c/c6/Artificial_neuron_structure.svg)
+
 [Kaynak](https://upload.wikimedia.org/wikipedia/commons/c/c6/Artificial_neuron_structure.svg)
 
 ## 4. Sonuç

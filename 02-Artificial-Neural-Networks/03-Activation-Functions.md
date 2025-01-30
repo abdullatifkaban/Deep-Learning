@@ -29,7 +29,7 @@ ReLU fonksiyonu, negatif değerleri sıfıra ayarlarken pozitif değerleri oldu�
 $$ f(z) = \max(0, z) $$
 
 **Özellikler:**
-- Çıktı aralığı: $ [0, +\infty) $
+- Çıktı aralığı: $[0, +\infty)$
 - Hesaplama açısından verimli ve gradyan kaybolma sorununu azaltır.
 - Negatif girdiler için gradyan sıfır olduğu için "ölü nöron" problemi olabilir.
 
@@ -46,7 +46,7 @@ Tanh fonksiyonu, sigmoid fonksiyonuna benzer ancak çıkış aralığı -1 ile 1
 $$ f(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}} $$
 
 **Özellikler:**
-- Çıktı aralığı: $ (-1,1) $
+- Çıktı aralığı: $(-1,1)$
 - Sıfır merkezlidir ve genellikle sigmoid’den daha iyi performans gösterir.
 
 **Tanh Grafiği:**  
