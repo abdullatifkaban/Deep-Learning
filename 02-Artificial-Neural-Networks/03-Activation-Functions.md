@@ -77,7 +77,7 @@ $$ f(z_i) = \frac{e^{z_i}}{\sum_{j} e^{z_j}} $$
 ## 3. Sonuç
 Aktivasyon fonksiyonları, yapay sinir ağlarının başarısını doğrudan etkileyen temel bileşenlerdir. Hangi fonksiyonun seçileceği, problem türüne ve ağın mimarisine bağlıdır. ReLU genellikle en yaygın kullanılan fonksiyon olsa da, belirli durumlarda Sigmoid, Tanh veya Softmax tercih edilebilir.
 
-Grafiklerle ilgili örnek kod için [buraya](02-Artificial-Neural-Networks/04-Activation_Functions.ipynb) bakabilirsiniz.
+Grafiklerle ilgili örnek kod için [buraya](04-Activation_Functions.ipynb) bakabilirsiniz.
 
 ## Daha Fazlası İçin Kaynaklar
 - [**"Deep Learning"** (Ian Goodfellow and Yoshua Bengio and Aaron Courville)](https://www.deeplearningbook.org/)
