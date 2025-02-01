@@ -2,11 +2,34 @@
 
 ## 📍 Bölüm Haritası
 - Önceki Bölüm: [Perceptron](01-Perceptron.md)
-- Sonraki Bölüm: [CNN Mimarisi](../03-Derin-Ogrenme-Modelleri/01-CNN.md)
+- Sonraki Bölüm: [Aktivasyon Fonksiyonlari](03-Aktivasyon-Fonksiyonlari.md)
 - Tahmini Süre: 4-5 saat
 - Zorluk Seviyesi: 🟡 Orta
 
 ## 🎯 Hedefler
+- Çok katmanlı ağ mimarisini anlama
+- İleri ve geri yayılımı kavrama
+- Farklı aktivasyon fonksiyonlarını uygulama
+- Model optimizasyonu yapabilme
+
+## 🎯 Öz Değerlendirme
+- [ ] MLP mimarisini açıklayabiliyorum
+- [ ] Geri yayılım algoritmasını anlayabiliyorum
+- [ ] Hiperparametre optimizasyonu yapabiliyorum
+- [ ] Farklı aktivasyon fonksiyonlarını kullanabiliyorum
+
+## 🚀 Mini Projeler
+1. MNIST Sınıflandırma
+   - MLP modeli oluşturma
+   - Hiperparametre optimizasyonu
+   - Model performans analizi
+
+2. Regresyon Problemi
+   - Boston Housing veri seti
+   - Farklı aktivasyon fonksiyonları
+   - Dropout implementasyonu
+
+## 📑 Ön Koşullar
 
 Çok Katmanlı Ağlar (Multilayer Perceptron - MLP), tek katmanlı perceptron'un sınırlamalarını aşmak için geliştirilmiş daha karmaşık yapılardır.
 

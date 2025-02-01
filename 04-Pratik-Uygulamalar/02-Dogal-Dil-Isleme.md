@@ -1,28 +1,50 @@
 # Doğal Dil İşleme (Natural Language Processing)
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Görüntü Sınıflandırma](01-Goruntu-Siniflandirma.md)
+- Sonraki Bölüm: [Nesne Tespiti](03-Nesne-Tespiti.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
+
 ## 🎯 Hedefler
-- Temel NLP görevlerini anlama ve uygulama
-- Modern NLP modellerini kullanabilme
-- Metin verisi ön işleme tekniklerini öğrenme
-- Transfer learning ile NLP modelleri geliştirme
+- Temel NLP kavramlarını anlama
+- Metin ön işleme tekniklerini öğrenme
+- Dil modelleri geliştirme
+- Modern NLP uygulamaları yapma
+
+## 🎯 Öz Değerlendirme
+- [ ] Metin ön işleme yapabiliyorum
+- [ ] Temel NLP modellerini kullanabiliyorum
+- [ ] Duygu analizi yapabiliyorum
+- [ ] Transformer modellerini uygulayabiliyorum
+
+## 🚀 Mini Projeler
+1. Duygu Analizi
+   - Tweet sınıflandırma
+   - BERT fine-tuning
+   - Model değerlendirme
+
+2. Metin Özetleme
+   - Extractive özetleme
+   - Abstractive özetleme
+   - ROUGE skorları
 
 ## 📑 Ön Koşullar
-- RNN, LSTM ve Transformer mimarileri bilgisi
-- Python ve TensorFlow/PyTorch deneyimi
-- Temel metin işleme kavramları
-- Tokenizasyon ve embedding kavramları
+- Python programlama
+- Derin öğrenme temelleri
+- Transformer mimarisi
+- Metin işleme kütüphaneleri
 
 ## 🔑 Temel Kavramlar
-1. Tokenizasyon ve Vektörleştirme
+1. Tokenization
 2. Word Embeddings
-3. Sequence Modeling
-4. Attention Mekanizmaları
-5. Fine-tuning ve Transfer Learning
+3. Dil Modelleri
+4. Transfer Learning
 
 ## Veri Hazırlama
 > Zorluk Seviyesi: 🟡 Orta
 
-> �� İpucu: Metin ön işleme, NLP modellerinin performansını büyük ölçüde etkiler
+> İpucu: Metin ön işleme, NLP modellerinin performansını büyük ölçüde etkiler
 
 ## Metin Ön İşleme
 

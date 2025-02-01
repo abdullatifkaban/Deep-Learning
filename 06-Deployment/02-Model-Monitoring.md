@@ -2,44 +2,43 @@
 
 ## 📍 Bölüm Haritası
 - Önceki Bölüm: [Model Deployment](01-Model-Deployment.md)
-- Tahmini Süre: 6-7 saat
-- Zorluk Seviyesi: 🔴 İleri
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
 
 ## 🎯 Hedefler
-- Model performansını sürekli izleme
+- Model performansını izleme
 - Veri ve model driftini tespit etme
-- Otomatik yeniden eğitim pipeline'ı kurma
-- MLOps best practice'lerini uygulama
+- Metrik toplama ve analiz
+- Alerting sistemleri kurma
 
 ## 🎯 Öz Değerlendirme
 - [ ] Monitoring sistemleri kurabiliyorum
-- [ ] Model ve veri driftini tespit edebiliyorum
-- [ ] Otomatik yeniden eğitim yapabiliyorum
-- [ ] Performans metriklerini izleyebiliyorum
+- [ ] Drift tespiti yapabiliyorum
+- [ ] Metrikleri analiz edebiliyorum
+- [ ] Alerting sistemleri geliştirebiliyorum
 
 ## 🚀 Mini Projeler
-1. Drift Tespit Sistemi
-   - Veri ve model drift analizi
-   - Alerting sistemi kurulumu
-   - Dashboard geliştirme
+1. Metrik Dashboard
+   - Prometheus kurulumu
+   - Grafana dashboard
+   - Metrik toplama
 
-2. Otomatik Eğitim Pipeline
-   - Veri kalite kontrolü
-   - Model performans değerlendirme
-   - Otomatik deployment
+2. Drift Detection
+   - Veri drift analizi
+   - Model drift tespiti
+   - Otomatik retraining
 
 ## 📑 Ön Koşullar
-- Model deployment deneyimi
-- Monitoring araçları bilgisi (Prometheus, Grafana)
-- CI/CD kavramları
-- Python ve shell scripting
+- Model deployment bilgisi
+- Python ve monitoring araçları
+- İstatistik temelleri
+- Linux sistem yönetimi
 
 ## 🔑 Temel Kavramlar
 1. Model Drift
-2. A/B Testing
-3. Continuous Training
-4. Performance Monitoring
-5. Automated Deployment
+2. Metric Collection
+3. Performance Monitoring
+4. Alerting Systems
 
 ## Model İzleme
 > Zorluk Seviyesi: 🔴 İleri

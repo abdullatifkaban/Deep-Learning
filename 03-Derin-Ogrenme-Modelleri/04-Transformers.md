@@ -1,18 +1,41 @@
 # Transformers
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [LSTM ve GRU](03-LSTM-GRU.md)
+- Sonraki Bölüm: [Görüntü Sınıflandırma](../04-Pratik-Uygulamalar/01-Goruntu-Siniflandirma.md)
+- Tahmini Süre: 6-7 saat
+- Zorluk Seviyesi: 🔴 İleri
+
 ## 🎯 Hedefler
-- Transformer mimarisinin temel bileşenlerini anlama
-- Self-attention mekanizmasının çalışma prensibini kavrama
+- Transformer mimarisini detaylı anlama
+- Self-attention mekanizmasını kavrama
 - Encoder-Decoder yapısını öğrenme
-- Modern Transformer modellerini (BERT, GPT) tanıma
+- Modern NLP uygulamaları geliştirme
+
+## 🎯 Öz Değerlendirme
+- [ ] Transformer mimarisini açıklayabiliyorum
+- [ ] Self-attention hesaplayabiliyorum
+- [ ] Encoder-Decoder yapısını anlayabiliyorum
+- [ ] Modern NLP modelleri geliştirebiliyorum
+
+## 🚀 Mini Projeler
+1. Makine Çevirisi
+   - Transformer tabanlı çeviri
+   - Attention görselleştirme
+   - BLEU skor analizi
+
+2. Metin Özetleme
+   - Abstractive özetleme
+   - Beam search
+   - Rouge skor değerlendirme
 
 ## 📑 Ön Koşullar
-- RNN ve LSTM mimarilerini anlama
-- Python ve derin öğrenme framework'leri deneyimi
-- Matris işlemleri ve lineer cebir temelleri
-- Attention mekanizması hakkında temel bilgi
+- Derin öğrenme temelleri
+- Python ve framework deneyimi
+- NLP kavramları
+- Matris işlemleri
 
-## �� Temel Kavramlar
+## 🔑 Temel Kavramlar
 1. Self-Attention
 2. Multi-Head Attention
 3. Positional Encoding

@@ -1,5 +1,46 @@
 # Pekiştirmeli Öğrenme (Reinforcement Learning)
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [GANs](02-GANs.md)
+- Sonraki Bölüm: [Model Optimization](04-Model-Optimization.md)
+- Tahmini Süre: 6-7 saat
+- Zorluk Seviyesi: 🔴 İleri
+
+## 🎯 Hedefler
+- RL temellerini detaylı anlama
+- Q-Learning ve DQN implementasyonu
+- Policy Gradient yöntemlerini öğrenme
+- Modern RL uygulamaları geliştirme
+
+## 🎯 Öz Değerlendirme
+- [ ] RL kavramlarını açıklayabiliyorum
+- [ ] Q-Learning implementasyonu yapabiliyorum
+- [ ] Policy Gradient kullanabiliyorum
+- [ ] Custom ortam geliştirebiliyorum
+
+## 🚀 Mini Projeler
+1. CartPole
+   - DQN implementasyonu
+   - Reward engineering
+   - Hyperparameter tuning
+
+2. Custom Environment
+   - OpenAI Gym ortamı
+   - Reward tasarımı
+   - Agent geliştirme
+
+## 📑 Ön Koşullar
+- Python ve PyTorch/TF
+- Olasılık teorisi
+- Optimizasyon teknikleri
+- Derin öğrenme temelleri
+
+## 🔑 Temel Kavramlar
+1. State ve Action
+2. Reward ve Policy
+3. Value Function
+4. Q-Learning
+
 ## Giriş
 
 Pekiştirmeli öğrenme, bir ajanın çevresiyle etkileşime girerek en iyi eylem stratejisini öğrendiği makine öğrenmesi türüdür.

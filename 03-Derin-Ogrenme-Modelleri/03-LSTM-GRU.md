@@ -1,22 +1,45 @@
 # LSTM ve GRU (Long Short-Term Memory & Gated Recurrent Unit)
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [RNN](02-RNN.md)
+- Sonraki Bölüm: [Transformers](04-Transformers.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
+
 ## 🎯 Hedefler
-- LSTM ve GRU'nun yapısını ve çalışma prensibini anlama
-- Kapı mekanizmalarının işlevini kavrama
-- LSTM ve GRU arasındaki farkları öğrenme
-- Pratik uygulamalarda doğru model seçimini yapabilme
+- LSTM ve GRU mimarilerini anlama
+- Uzun vadeli bağımlılıkları öğrenme
+- Kapı mekanizmalarını kavrama
+- Modern uygulamaları geliştirme
+
+## �� Öz Değerlendirme
+- [ ] LSTM ve GRU yapılarını açıklayabiliyorum
+- [ ] Kapı mekanizmalarını anlayabiliyorum
+- [ ] Farklı mimarileri karşılaştırabiliyorum
+- [ ] Uygun mimariye karar verebiliyorum
+
+## 🚀 Mini Projeler
+1. Dil Modeli
+   - LSTM tabanlı dil modeli
+   - Farklı kapı yapıları
+   - Performans analizi
+
+2. Müzik Üretimi
+   - MIDI dosya işleme
+   - GRU tabanlı model
+   - Stil transferi
 
 ## 📑 Ön Koşullar
-- RNN'lerin temel yapısı ve çalışma prensibi
-- Python ve TensorFlow/PyTorch deneyimi
-- Gradyan problemleri hakkında bilgi
-- Temel matris işlemleri
+- RNN mimarisi bilgisi
+- Python ve derin öğrenme framework'leri
+- Gradyan akışı kavramları
+- Optimizasyon teknikleri
 
-## 🔑 Temel Kavramlar
-1. Kapı Mekanizmaları (Gates)
-2. Hafıza Hücresi (Memory Cell)
+## �� Temel Kavramlar
+1. Kapı Mekanizmaları
+2. Hücre Durumu
 3. Uzun Vadeli Bağımlılıklar
-4. Gradyan Akışı Kontrolü
+4. Gradyan Kontrolü
 
 ## Giriş
 🟡 Orta

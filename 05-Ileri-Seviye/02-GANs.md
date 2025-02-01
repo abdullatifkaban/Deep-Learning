@@ -1,5 +1,46 @@
 # Üretici Çekişmeli Ağlar (GANs)
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Transfer Learning](01-Transfer-Learning.md)
+- Sonraki Bölüm: [Reinforcement Learning](03-Reinforcement-Learning.md)
+- Tahmini Süre: 6-7 saat
+- Zorluk Seviyesi: 🔴 İleri
+
+## 🎯 Hedefler
+- GAN mimarisini detaylı anlama
+- Generator ve Discriminator yapılarını kavrama
+- Farklı GAN türlerini öğrenme
+- Modern GAN uygulamaları geliştirme
+
+## 🎯 Öz Değerlendirme
+- [ ] GAN mimarisini açıklayabiliyorum
+- [ ] Generator ve Discriminator yapılarını anlayabiliyorum
+- [ ] Farklı GAN türlerini kullanabiliyorum
+- [ ] Mode collapse problemini çözebiliyorum
+
+## 🚀 Mini Projeler
+1. DCGAN
+   - Yüz üretimi
+   - Style transfer
+   - Latent space analizi
+
+2. Conditional GAN
+   - Etiket tabanlı üretim
+   - Cross-domain transfer
+   - Attribute manipulation
+
+## 📑 Ön Koşullar
+- Derin öğrenme temelleri
+- CNN mimarisi bilgisi
+- Python ve framework deneyimi
+- Optimizasyon teknikleri
+
+## 🔑 Temel Kavramlar
+1. Generator
+2. Discriminator
+3. Adversarial Training
+4. Mode Collapse
+
 ## Giriş
 
 GANs (Generative Adversarial Networks), üretici ve ayırt edici olmak üzere iki ağın birbirleriyle rekabet ederek öğrendiği derin öğrenme modelidir.

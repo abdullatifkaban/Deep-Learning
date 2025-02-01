@@ -2,28 +2,44 @@
 
 ## 📍 Bölüm Haritası
 - Önceki Bölüm: [Nesne Tespiti](03-Nesne-Tespiti.md)
-- Sonraki Bölüm: [Model Deployment](../06-Deployment/01-Model-Deployment.md)
+- Sonraki Bölüm: [Transfer Learning](../05-Ileri-Seviye/01-Transfer-Learning.md)
 - Tahmini Süre: 5-6 saat
 - Zorluk Seviyesi: 🟡 Orta
 
 ## 🎯 Hedefler
-- Zaman serisi verilerini anlama ve ön işleme
-- Farklı tahmin modellerini uygulama
-- Uzun ve kısa vadeli tahminler yapabilme
-- Model performansını değerlendirme ve iyileştirme
+- Zaman serisi kavramlarını anlama
+- Temel tahmin modellerini öğrenme
+- LSTM ve GRU modellerini uygulama
+- Çok değişkenli analiz yapabilme
+
+## 🎯 Öz Değerlendirme
+- [ ] Zaman serisi bileşenlerini açıklayabiliyorum
+- [ ] Temel tahmin modellerini kullanabiliyorum
+- [ ] LSTM/GRU modelleri geliştirebiliyorum
+- [ ] Performans metriklerini değerlendirebiliyorum
+
+## 🚀 Mini Projeler
+1. Hisse Senedi Tahmini
+   - Veri ön işleme
+   - LSTM modeli
+   - Backtesting
+
+2. Enerji Tüketimi Tahmini
+   - Çok değişkenli analiz
+   - GRU modeli
+   - Sezonsal analiz
 
 ## 📑 Ön Koşullar
-- RNN ve LSTM mimarileri bilgisi
-- Python ve TensorFlow/PyTorch deneyimi
-- Temel istatistik ve olasılık
-- Veri analizi ve görselleştirme becerileri
+- Python ve pandas
+- Temel istatistik
+- RNN mimarisi
+- Veri görselleştirme
 
 ## 🔑 Temel Kavramlar
-1. Zaman Serisi Bileşenleri
-2. Mevsimsellik ve Trend
+1. Trend Analizi
+2. Sezonsal Bileşenler
 3. Durağanlık
-4. Özellik Mühendisliği
-5. Tahmin Metrikleri
+4. Otokorelasyon
 
 ## Veri Hazırlama
 > Zorluk Seviyesi: 🟡 Orta

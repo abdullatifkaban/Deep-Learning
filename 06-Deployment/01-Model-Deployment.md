@@ -1,4 +1,10 @@
-# Model Deployment ve Servisleştirme
+# Model Deployment
+
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Model Optimization](../05-Ileri-Seviye/04-Model-Optimization.md)
+- Sonraki Bölüm: [Model Monitoring](02-Model-Monitoring.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
 
 ## 🎯 Hedefler
 - Model deployment sürecini anlama
@@ -6,41 +12,34 @@
 - Docker containerization uygulama
 - Model versiyonlama ve yönetimi
 
-## 📑 Ön Koşullar
-- Python web framework'leri (Flask/FastAPI)
-- Docker temel bilgisi
-- RESTful API kavramları
-- Temel Linux komutları
-
-## 🔑 Temel Kavramlar
-1. Model Servisleştirme
-2. API Tasarımı
-3. Containerization
-4. Load Balancing
-5. Model Versiyonlama
-
-## 📍 Bölüm Haritası
-- Önceki Bölüm: [Zaman Serisi Analizi](../04-Pratik-Uygulamalar/04-Zaman-Serisi.md)
-- Sonraki Bölüm: [Model Monitoring](02-Model-Monitoring.md)
-- Tahmini Süre: 6-7 saat
-- Zorluk Seviyesi: 🔴 İleri
-
 ## 🎯 Öz Değerlendirme
-- [ ] REST API servisleri oluşturabiliyorum
-- [ ] Docker containerization yapabiliyorum
-- [ ] Model versiyonlama uygulayabiliyorum
-- [ ] Ölçeklendirme stratejileri geliştirebiliyorum
+- [ ] Deployment sürecini açıklayabiliyorum
+- [ ] REST API geliştirebiliyorum
+- [ ] Docker kullanabiliyorum
+- [ ] Cloud servislerini kullanabiliyorum
 
 ## 🚀 Mini Projeler
-1. Model Servis API'si
-   - FastAPI ile REST servisi geliştirin
-   - Docker container oluşturun
-   - Load balancing ekleyin
+1. Flask API
+   - Model servisleştirme
+   - API endpoint'leri
+   - Load balancing
 
-2. MLOps Pipeline
-   - CI/CD pipeline kurun
-   - Model registry oluşturun
-   - Monitoring sistemi entegre edin
+2. Docker Container
+   - Dockerfile oluşturma
+   - Image build
+   - Container orchestration
+
+## 📑 Ön Koşullar
+- Python ve web framework'leri
+- Linux temel komutları
+- Git versiyon kontrolü
+- Temel ağ bilgisi
+
+## 🔑 Temel Kavramlar
+1. REST API
+2. Containerization
+3. Load Balancing
+4. Microservices
 
 ## Model Servisleştirme
 > Zorluk Seviyesi: 🔴 İleri

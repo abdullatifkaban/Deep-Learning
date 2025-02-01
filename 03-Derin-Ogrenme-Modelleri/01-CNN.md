@@ -1,21 +1,45 @@
-# Evrişimli Sinir Ağları (Convolutional Neural Networks - CNN)
+# Evrişimli Sinir Ağları (CNN)
+
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Geri Yayılım](../02-Yapay-Sinir-Aglari/04-Geri-Yayilim.md)
+- Sonraki Bölüm: [RNN](02-RNN.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
 
 ## 🎯 Hedefler
-- CNN'in temel yapısını ve çalışma prensibini anlama
-- Evrişim ve havuzlama işlemlerinin mantığını kavrama
-- Basit bir CNN modeli oluşturabilme
+- CNN mimarisini ve bileşenlerini anlama
+- Evrişim ve havuzlama işlemlerini kavrama
+- Transfer learning tekniklerini öğrenme
+- Modern CNN mimarilerini tanıma
+
+## 📝 Öz Değerlendirme
+- [ ] CNN mimarisini açıklayabiliyorum
+- [ ] Evrişim ve havuzlama işlemlerini uygulayabiliyorum
+- [ ] Transfer learning yapabiliyorum
+- [ ] Modern mimarileri kullanabiliyorum
+
+## 🚀 Mini Projeler
+1. CIFAR-10 Sınıflandırma
+   - Temel CNN modeli oluşturma
+   - Veri artırma teknikleri
+   - Model optimizasyonu
+
+2. Transfer Learning
+   - ResNet50 kullanımı
+   - Fine-tuning
+   - Performans karşılaştırması
 
 ## 📑 Ön Koşullar
-- Python programlama (orta seviye)
-- NumPy kütüphanesi kullanımı
-- Temel matris işlemleri
-- Yapay sinir ağları temelleri
+- MLP ve geri yayılım bilgisi
+- Python ve TensorFlow/PyTorch deneyimi
+- Temel görüntü işleme
+- Matris işlemleri
 
 ## 🔑 Temel Kavramlar
-1. Evrişim (Convolution) İşlemi
-2. Havuzlama (Pooling)
-3. Aktivasyon Fonksiyonları
-4. Tam Bağlantılı Katmanlar
+1. Evrişim Katmanı
+2. Havuzlama
+3. Transfer Learning
+4. Modern Mimariler
 
 ## Giriş
 > Zorluk Seviyesi: 🟡 Orta
@@ -415,11 +439,11 @@ def visualize_embeddings(model, data, labels, layer_name):
 1. MNIST veri seti üzerinde basit CNN oluşturma
 2. Farklı filtre boyutlarını deneme
 
-### Orta Seviye
+### Orta Seviyesi
 1. Veri artırma teknikleri uygulama
 2. Transfer learning ile model geliştirme
 
-### İleri Seviye
+### İleri Seviyesi
 1. Özel veri seti üzerinde model eğitme
 2. Model optimizasyonu yapma
 

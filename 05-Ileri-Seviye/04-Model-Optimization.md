@@ -1,5 +1,46 @@
 # Model Optimizasyonu
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Reinforcement Learning](03-Reinforcement-Learning.md)
+- Sonraki Bölüm: [Model-Deployment](../06-Deployment/01-Model-Deployment.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🔴 İleri
+
+## 🎯 Hedefler
+- Model optimizasyon tekniklerini anlama
+- Hyperparameter tuning yapabilme
+- Model compression uygulama
+- Inference hızını artırma
+
+## 🎯 Öz Değerlendirme
+- [ ] Optimizasyon tekniklerini açıklayabiliyorum
+- [ ] Hyperparameter tuning yapabiliyorum
+- [ ] Model compression uygulayabiliyorum
+- [ ] Inference performansını artırabiliyorum
+
+## 🚀 Mini Projeler
+1. Hyperparameter Tuning
+   - Grid/Random search
+   - Bayesian optimization
+   - Cross validation
+
+2. Model Compression
+   - Quantization
+   - Pruning
+   - Knowledge distillation
+
+## 📑 Ön Koşullar
+- Derin öğrenme temelleri
+- Python ve framework deneyimi
+- Optimizasyon teorisi
+- Model mimarileri bilgisi
+
+## 🔑 Temel Kavramlar
+1. Hyperparameter Tuning
+2. Model Compression
+3. Quantization
+4. Knowledge Distillation
+
 ## Giriş
 
 Model optimizasyonu, derin öğrenme modellerinin performansını ve verimliliğini artırmak için kullanılan teknikleri içerir.

@@ -1,4 +1,45 @@
-# Geri Yayılım Algoritması (Backpropagation)
+# Geri Yayılım Algoritması
+
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Aktivasyon Fonksiyonları](03-Aktivasyon-Fonksiyonlari.md)
+- Sonraki Bölüm: [CNN Mimarisi](../03-Derin-Ogrenme-Modelleri/01-CNN.md)
+- Tahmini Süre: 4-5 saat
+- Zorluk Seviyesi: 🟡 Orta
+
+## 🎯 Hedefler
+- Geri yayılım algoritmasının mantığını anlama
+- Gradyan hesaplamalarını kavrama
+- Zincir kuralını uygulama
+- Optimizasyon tekniklerini öğrenme
+
+## 🎯 Öz Değerlendirme
+- [ ] Geri yayılım algoritmasını açıklayabiliyorum
+- [ ] Gradyan hesaplamalarını yapabiliyorum
+- [ ] Zincir kuralını uygulayabiliyorum
+- [ ] Farklı optimizasyon tekniklerini kullanabiliyorum
+
+## 🚀 Mini Projeler
+1. Manuel Geri Yayılım
+   - Basit sinir ağı implementasyonu
+   - Gradyan hesaplamaları
+   - Ağırlık güncellemeleri
+
+2. Optimizasyon Karşılaştırması
+   - SGD vs Adam
+   - Momentum implementasyonu
+   - Öğrenme oranı planlaması
+
+## 📑 Ön Koşullar
+- Türev ve zincir kuralı bilgisi
+- Python ve NumPy deneyimi
+- Temel lineer cebir
+- Optimizasyon kavramları
+
+## 🔑 Temel Kavramlar
+1. Gradyan İniş
+2. Zincir Kuralı
+3. Hata Fonksiyonları
+4. Optimizasyon Teknikleri
 
 ## Giriş
 

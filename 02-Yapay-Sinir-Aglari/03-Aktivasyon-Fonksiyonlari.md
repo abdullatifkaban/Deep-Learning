@@ -1,5 +1,37 @@
 # Aktivasyon Fonksiyonları
 
+## �� Bölüm Haritası
+- Önceki Bölüm: [Çok Katmanlı Ağlar](02-Cok-Katmanli-Aglar.md)
+- Sonraki Bölüm: [Geri Yayılım](04-Geri-Yayilim.md)
+- Tahmini Süre: 2-3 saat
+- Zorluk Seviyesi: 🟢 Başlangıç
+
+## 🎯 Hedefler
+- Aktivasyon fonksiyonlarının amacını anlama
+- Farklı fonksiyonların özelliklerini öğrenme
+- Kullanım alanlarını ve seçim kriterlerini kavrama
+- Türevlerini ve gradyan hesaplamalarını anlama
+
+## 🎯 Öz Değerlendirme
+- [ ] Aktivasyon fonksiyonlarının amacını açıklayabiliyorum
+- [ ] Farklı fonksiyonların avantaj/dezavantajlarını biliyorum
+- [ ] Uygun fonksiyonu seçebiliyorum
+- [ ] Türev hesaplamalarını yapabiliyorum
+
+## 🚀 Mini Projeler
+1. Aktivasyon Fonksiyonu Karşılaştırması
+   - Farklı fonksiyonları görselleştirme
+   - Gradyan değişimlerini analiz etme
+   - Performans karşılaştırması
+
+2. Vanishing Gradient Problemi
+   - Derin ağlarda problem tespiti
+   - Çözüm yöntemleri uygulama
+   - Sonuçları değerlendirme
+
+## 📑 Ön Koşullar
+...
+
 ## Aktivasyon Fonksiyonlarının Önemi
 
 Aktivasyon fonksiyonları, yapay sinir ağlarında doğrusal olmayan ilişkileri modellemek için kullanılan matematiksel fonksiyonlardır. Bu fonksiyonlar, nöronların çıktılarını belirli bir aralığa sıkıştırır ve ağın öğrenme kapasitesini artırır.

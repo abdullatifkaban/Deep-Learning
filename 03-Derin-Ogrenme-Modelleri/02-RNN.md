@@ -1,21 +1,45 @@
 # Tekrarlayan Sinir Ağları (Recurrent Neural Networks - RNN)
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [CNN Mimarisi](01-CNN.md)
+- Sonraki Bölüm: [LSTM ve GRU](03-LSTM-GRU.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
+
 ## 🎯 Hedefler
-- RNN'in temel yapısını ve çalışma prensibini anlama
-- Sıralı veri işleme mantığını kavrama
-- Basit bir RNN modeli oluşturabilme
+- RNN mimarisini ve çalışma prensibini anlama
+- Sıralı veri işleme yöntemlerini öğrenme
+- Vanishing gradient problemini kavrama
+- Temel RNN uygulamaları geliştirme
+
+## 🎯 Öz Değerlendirme
+- [ ] RNN mimarisini açıklayabiliyorum
+- [ ] Sıralı veri işleyebiliyorum
+- [ ] Vanishing gradient problemini anlayabiliyorum
+- [ ] RNN tabanlı modeller geliştirebiliyorum
+
+## 🚀 Mini Projeler
+1. Metin Üretimi
+   - Karakter seviyesinde RNN
+   - Shakespeare metinleri
+   - Sıcaklık parametresi ayarlama
+
+2. Zaman Serisi Tahmini
+   - Hava durumu verisi
+   - Çok değişkenli tahmin
+   - Performans optimizasyonu
 
 ## 📑 Ön Koşullar
-- Python programlama (orta seviye)
-- NumPy ve TensorFlow temel bilgisi
-- Yapay sinir ağları temelleri
-- Temel matris işlemleri
+- Temel sinir ağları bilgisi
+- Python ve derin öğrenme framework'leri
+- Sıralı veri yapıları
+- Optimizasyon teknikleri
 
 ## 🔑 Temel Kavramlar
 1. Sıralı Veri İşleme
 2. Gizli Durum (Hidden State)
 3. Geri Yayılım (Backpropagation Through Time)
-4. Gradyan Problemi
+4. Vanishing Gradient
 
 ## Giriş
 > Zorluk Seviyesi: 🟡 Orta
@@ -30,7 +54,7 @@ Tekrarlayan Sinir Ağları, sıralı verileri (metin, zaman serileri, vb.) işle
 ![RNN Basic Structure](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
 
 ## RNN'in Temel Yapısı
-> 💡 İpucu: RNN'ler aynı ağırlıkları her zaman adımında tekrar kullanır
+> �� İpucu: RNN'ler aynı ağırlıkları her zaman adımında tekrar kullanır
 
 ### 1. Basit RNN Hücresi
 ```python

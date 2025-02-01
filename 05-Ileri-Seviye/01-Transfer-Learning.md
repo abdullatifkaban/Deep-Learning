@@ -1,5 +1,46 @@
 # Transfer Learning (Transfer Öğrenme)
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Zaman Serisi](../04-Pratik-Uygulamalar/04-Zaman-Serisi.md)
+- Sonraki Bölüm: [GANs](02-GANs.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🔴 İleri
+
+## 🎯 Hedefler
+- Transfer learning kavramını anlama
+- Pre-trained modelleri kullanma
+- Fine-tuning tekniklerini öğrenme
+- Domain adaptation yapabilme
+
+## 🎯 Öz Değerlendirme
+- [ ] Transfer learning prensiplerini açıklayabiliyorum
+- [ ] Pre-trained modelleri kullanabiliyorum
+- [ ] Fine-tuning yapabiliyorum
+- [ ] Domain adaptation uygulayabiliyorum
+
+## 🚀 Mini Projeler
+1. Görüntü Sınıflandırma
+   - ResNet50 kullanımı
+   - Custom dataset
+   - Fine-tuning
+
+2. NLP Uygulaması
+   - BERT modeli
+   - Task adaptation
+   - Few-shot learning
+
+## 📑 Ön Koşullar
+- Derin öğrenme temelleri
+- Python ve framework deneyimi
+- GPU programlama
+- Model mimarileri bilgisi
+
+## 🔑 Temel Kavramlar
+1. Pre-trained Models
+2. Fine-tuning
+3. Feature Extraction
+4. Domain Adaptation
+
 ## Giriş
 
 Transfer learning, önceden eğitilmiş bir modelin bilgisini yeni bir probleme aktarma tekniğidir. Bu bölümde, TensorFlow ile transfer learning uygulamalarını öğreneceğiz.

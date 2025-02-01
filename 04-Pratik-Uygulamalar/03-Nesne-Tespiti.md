@@ -1,29 +1,45 @@
-# Nesne Tespiti (Object Detection)
+# Nesne Tespiti
 
 ## 📍 Bölüm Haritası
 - Önceki Bölüm: [Doğal Dil İşleme](02-Dogal-Dil-Isleme.md)
-- Sonraki Bölüm: [Zaman Serisi Analizi](04-Zaman-Serisi.md)
-- Tahmini Süre: 6-7 saat
-- Zorluk Seviyesi: 🔴 İleri
+- Sonraki Bölüm: [Zaman Serisi](04-Zaman-Serisi.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
 
 ## 🎯 Hedefler
-- Temel nesne tespiti modellerini anlama ve uygulama
-- Farklı nesne tespiti mimarilerini karşılaştırma
-- Model performansını değerlendirme ve optimize etme
-- Gerçek zamanlı nesne tespiti sistemleri geliştirme
+- Nesne tespiti mimarilerini anlama
+- Bounding box tahminlerini öğrenme
+- IoU ve NMS kavramlarını kavrama
+- Modern detektörleri kullanabilme
+
+## 🎯 Öz Değerlendirme
+- [ ] Temel mimarileri açıklayabiliyorum
+- [ ] Bounding box hesaplayabiliyorum
+- [ ] IoU ve NMS uygulayabiliyorum
+- [ ] YOLO ve SSD kullanabiliyorum
+
+## 🚀 Mini Projeler
+1. Yüz Tespiti
+   - OpenCV ile yüz tespiti
+   - MTCNN implementasyonu
+   - Performans analizi
+
+2. Araç Tespiti
+   - YOLO modeli eğitimi
+   - Custom veri seti hazırlama
+   - Real-time tespit
 
 ## 📑 Ön Koşullar
-- CNN mimarileri ve görüntü işleme temelleri
-- Python ve TensorFlow/PyTorch deneyimi
-- Temel bilgisayarlı görü kavramları
-- Bounding box ve anchor box kavramları
+- CNN mimarisi bilgisi
+- Python ve OpenCV deneyimi
+- Temel görüntü işleme
+- GPU programlama
 
 ## 🔑 Temel Kavramlar
-1. Bounding Box Regresyonu
+1. Bounding Box
 2. Anchor Boxes
-3. Non-Maximum Suppression (NMS)
-4. Intersection over Union (IoU)
-5. Mean Average Precision (mAP)
+3. IoU (Intersection over Union)
+4. Non-Max Suppression
 
 ## Veri Hazırlama
 🔴 İleri
