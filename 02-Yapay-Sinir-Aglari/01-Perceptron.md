@@ -7,6 +7,29 @@
 - Zorluk Seviyesi: 🟢 Başlangıç
 
 ## 🎯 Hedefler
+- Perceptron yapısını ve çalışma prensibini anlama
+- Yapay sinir hücresi bileşenlerini öğrenme
+- Temel öğrenme algoritmasını uygulama
+- Perceptron'un sınırlamalarını kavrama
+
+## 🎯 Öz Değerlendirme
+- [ ] Perceptron yapısını açıklayabiliyorum
+- [ ] Öğrenme algoritmasını uygulayabiliyorum
+- [ ] Basit sınıflandırma yapabiliyorum
+- [ ] Sınırlamaları anlayabiliyorum
+
+## 🚀 Mini Projeler
+1. Mantık Kapıları
+   - AND, OR kapıları implementasyonu
+   - XOR problemi analizi
+   - Sonuçların görselleştirilmesi
+
+2. İris Sınıflandırma
+   - İkili sınıflandırma
+   - Performans değerlendirme
+   - Sınırlamaları gözlemleme
+
+## 📑 Ön Koşullar
 
 ## Biyolojik Sinir Hücresi
 
@@ -126,34 +149,19 @@ Perceptron'un sınırlamalarını aşmak için:
 
 ## Alıştırmalar
 
-1. OR kapısı için perceptron implementasyonu:
-```python
-# OR kapısı verisi
-X = np.array([[0,0], [0,1], [1,0], [1,1]], dtype=np.float32)
-y = np.array([0, 1, 1, 1], dtype=np.float32)
+### Başlangıç Seviyesi
+1. AND ve OR kapıları implementasyonu
+2. Basit ikili sınıflandırma
 
-# Model oluşturma ve eğitim
-model = tf.keras.Sequential([
-    tf.keras.layers.Dense(1, activation='step', input_shape=(2,))
-])
-model.compile(optimizer='sgd', loss='binary_crossentropy')
-model.fit(X, y, epochs=100, verbose=0)
-```
+### Orta Seviye
+1. XOR problemi analizi
+2. İris veri seti sınıflandırma
 
-2. NOT kapısı için perceptron implementasyonu:
-```python
-# NOT kapısı verisi
-X = np.array([[0], [1]], dtype=np.float32)
-y = np.array([1, 0], dtype=np.float32)
+### İleri Seviye
+1. Çok sınıflı perceptron
+2. Farklı aktivasyon fonksiyonları
 
-model = tf.keras.Sequential([
-    tf.keras.layers.Dense(1, activation='step', input_shape=(1,))
-])
-model.compile(optimizer='sgd', loss='binary_crossentropy')
-model.fit(X, y, epochs=100, verbose=0)
-```
-
-## Kaynaklar
+## 📚 Önerilen Kaynaklar
 1. [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
 2. [Deep Learning Book - Chapter 6](https://www.deeplearningbook.org/contents/mlp.html)
 3. [TensorFlow Documentation](https://www.tensorflow.org/guide/keras/custom_layers_and_models) 

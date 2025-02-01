@@ -59,7 +59,7 @@ graph TD
     B --> F[Derin Öğrenme]
 ```
 
-![AI-ML-DL İlişkisi](https://miro.medium.com/max/1400/1*jMwjEz6qd5rb7TzNmhmQ7w.png)
+![AI-ML-DL İlişkisi](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*zJ4VxLVli48ywq-D4ZLxmQ.png)
 
 ### Yapay Zeka Türleri
 1. **Dar (Zayıf) AI**: Belirli bir görevi yerine getirmek için tasarlanmış sistemler
@@ -223,11 +223,6 @@ Derin öğrenme, makine öğrenmesinin bir alt kümesidir ve çok katmanlı yapa
    - Müzik üretimi
    - Ses sentezi
 
-## 📚 Önerilen Kaynaklar
-- [AI Course by Stanford](https://www.coursera.org/learn/ai)
-- [Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
-- [Deep Learning Book](https://www.deeplearningbook.org/)
-
 ## ✍️ Alıştırmalar
 ### Başlangıç Seviyesi
 1. AI, ML ve DL örneklerini sınıflandırma
@@ -241,13 +236,13 @@ Derin öğrenme, makine öğrenmesinin bir alt kümesidir ve çok katmanlı yapa
 1. Güncel AI trendleri araştırması
 2. Etik sorunlar analizi
 
+## 📚 Önerilen Kaynaklar
+- [AI Course by Stanford](https://www.coursera.org/learn/ai)
+- [Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
+- [Deep Learning Book](https://www.deeplearningbook.org/)
+
 ## Kaynaklar ve İleri Okuma
 
 1. [Deep Learning Book](https://www.deeplearningbook.org/)
-2. [Machine Learning Mastery](https://machinelearningmastery.com/)
-3. [TensorFlow Tutorials](https://www.tensorflow.org/tutorials)
-
-## Kaynaklar
-1. [TensorFlow Documentation](https://www.tensorflow.org/guide)
 2. [Machine Learning Mastery](https://machinelearningmastery.com/)
 3. [TensorFlow Tutorials](https://www.tensorflow.org/tutorials) 
