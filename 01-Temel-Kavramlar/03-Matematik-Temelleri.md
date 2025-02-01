@@ -1,10 +1,33 @@
 # Matematik Temelleri
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Python ve Kütüphaneler](02-Python-Kutuphaneler.md)
+- Sonraki Bölüm: [Perceptron ve Sinir Hücreleri](../02-Yapay-Sinir-Aglari/01-Perceptron.md)
+- Tahmini Süre: 4-5 saat
+- Zorluk Seviyesi: 🟢 Başlangıç
+
 ## 🎯 Hedefler
 - Derin öğrenme için gerekli matematik kavramlarını anlama
 - Temel lineer cebir ve kalkülüs bilgisi edinme
 - Optimizasyon ve olasılık teorisi temellerini öğrenme
 - Matematiksel notasyonu ve terminolojiyi kavrama
+
+## 🎯 Öz Değerlendirme
+- [ ] Temel lineer cebir işlemlerini yapabiliyorum
+- [ ] Türev ve integral kavramlarını anlayabildim
+- [ ] Optimizasyon problemlerini çözebiliyorum
+- [ ] Olasılık ve istatistik hesaplamalarını yapabiliyorum
+
+## 🚀 Mini Projeler
+1. Gradyan İniş Simülasyonu
+   - 2D ve 3D fonksiyonlar için gradyan inişi uygulayın
+   - Farklı öğrenme oranlarının etkisini gözlemleyin
+   - Sonuçları görselleştirin
+
+2. Matris İşlemleri Uygulaması
+   - Temel matris operasyonlarını içeren bir kütüphane yazın
+   - Sinir ağı hesaplamalarını manuel olarak gerçekleştirin
+   - Numpy sonuçlarıyla karşılaştırın
 
 ## 📑 Ön Koşullar
 - Temel matematik bilgisi
@@ -20,8 +43,6 @@
 5. Matris İşlemleri
 
 ## Lineer Cebir
-> Zorluk Seviyesi: 🟢 Başlangıç
-
 > 💡 İpucu: Matris işlemlerini iyi anlamak, derin öğrenme modellerinin çalışma prensibini kavramayı kolaylaştırır
 
 ### 1. Vektörler ve Matrisler

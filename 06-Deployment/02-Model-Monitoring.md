@@ -1,10 +1,32 @@
 # Model Monitoring ve MLOps
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Model Deployment](01-Model-Deployment.md)
+- Tahmini Süre: 6-7 saat
+- Zorluk Seviyesi: 🔴 İleri
+
 ## 🎯 Hedefler
 - Model performansını sürekli izleme
 - Veri ve model driftini tespit etme
 - Otomatik yeniden eğitim pipeline'ı kurma
 - MLOps best practice'lerini uygulama
+
+## 🎯 Öz Değerlendirme
+- [ ] Monitoring sistemleri kurabiliyorum
+- [ ] Model ve veri driftini tespit edebiliyorum
+- [ ] Otomatik yeniden eğitim yapabiliyorum
+- [ ] Performans metriklerini izleyebiliyorum
+
+## 🚀 Mini Projeler
+1. Drift Tespit Sistemi
+   - Veri ve model drift analizi
+   - Alerting sistemi kurulumu
+   - Dashboard geliştirme
+
+2. Otomatik Eğitim Pipeline
+   - Veri kalite kontrolü
+   - Model performans değerlendirme
+   - Otomatik deployment
 
 ## 📑 Ön Koşullar
 - Model deployment deneyimi
@@ -411,4 +433,26 @@ class AnomalyDetector:
 
 ### İleri Seviye
 1. Tam MLOps pipeline kurulumu
-2. Multi-model monitoring sistemi 
+2. Multi-model monitoring sistemi
+
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Model Deployment](01-Model-Deployment.md)
+- Tahmini Süre: 6-7 saat
+- Zorluk Seviyesi: 🔴 İleri
+
+## 🎯 Öz Değerlendirme
+- [ ] Monitoring sistemleri kurabiliyorum
+- [ ] Model ve veri driftini tespit edebiliyorum
+- [ ] Otomatik yeniden eğitim yapabiliyorum
+- [ ] Performans metriklerini izleyebiliyorum
+
+## 🚀 Mini Projeler
+1. Drift Tespit Sistemi
+   - Veri ve model drift analizi
+   - Alerting sistemi kurulumu
+   - Dashboard geliştirme
+
+2. Otomatik Eğitim Pipeline
+   - Veri kalite kontrolü
+   - Model performans değerlendirme
+   - Otomatik deployment 

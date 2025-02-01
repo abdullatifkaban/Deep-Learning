@@ -19,6 +19,29 @@
 4. Load Balancing
 5. Model Versiyonlama
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Zaman Serisi Analizi](../04-Pratik-Uygulamalar/04-Zaman-Serisi.md)
+- Sonraki Bölüm: [Model Monitoring](02-Model-Monitoring.md)
+- Tahmini Süre: 6-7 saat
+- Zorluk Seviyesi: 🔴 İleri
+
+## 🎯 Öz Değerlendirme
+- [ ] REST API servisleri oluşturabiliyorum
+- [ ] Docker containerization yapabiliyorum
+- [ ] Model versiyonlama uygulayabiliyorum
+- [ ] Ölçeklendirme stratejileri geliştirebiliyorum
+
+## 🚀 Mini Projeler
+1. Model Servis API'si
+   - FastAPI ile REST servisi geliştirin
+   - Docker container oluşturun
+   - Load balancing ekleyin
+
+2. MLOps Pipeline
+   - CI/CD pipeline kurun
+   - Model registry oluşturun
+   - Monitoring sistemi entegre edin
+
 ## Model Servisleştirme
 > Zorluk Seviyesi: 🔴 İleri
 

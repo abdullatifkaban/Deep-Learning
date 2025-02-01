@@ -1,5 +1,11 @@
 # Nesne Tespiti (Object Detection)
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Doğal Dil İşleme](02-Dogal-Dil-Isleme.md)
+- Sonraki Bölüm: [Zaman Serisi Analizi](04-Zaman-Serisi.md)
+- Tahmini Süre: 6-7 saat
+- Zorluk Seviyesi: 🔴 İleri
+
 ## 🎯 Hedefler
 - Temel nesne tespiti modellerini anlama ve uygulama
 - Farklı nesne tespiti mimarilerini karşılaştırma

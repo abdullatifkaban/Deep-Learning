@@ -1,10 +1,33 @@
 # Python ve Gerekli Kütüphaneler
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [AI, ML ve DL](01-AI-ML-DL.md)
+- Sonraki Bölüm: [Matematik Temelleri](03-Matematik-Temelleri.md)
+- Tahmini Süre: 3-4 saat
+- Zorluk Seviyesi: 🟢 Başlangıç
+
 ## 🎯 Hedefler
 - Python programlama temellerini öğrenme
 - Veri bilimi kütüphanelerini tanıma
 - Derin öğrenme framework'lerini anlama
 - Temel veri işleme becerilerini geliştirme
+
+## 🎯 Öz Değerlendirme
+- [ ] Python'un temel veri yapılarını ve fonksiyonlarını kullanabiliyorum
+- [ ] NumPy ve Pandas ile veri işleme yapabiliyorum
+- [ ] TensorFlow/PyTorch ile basit modeller oluşturabiliyorum
+- [ ] Matplotlib ile veri görselleştirme yapabiliyorum
+
+## 🚀 Mini Projeler
+1. Veri Analizi Projesi
+   - Kaggle'dan bir veri seti seçin
+   - Pandas ile veri temizleme ve analiz yapın
+   - Matplotlib ile görselleştirmeler oluşturun
+
+2. Basit ML Pipeline
+   - Veri ön işleme fonksiyonları yazın
+   - Scikit-learn ile model eğitimi yapın
+   - Model performansını değerlendirin
 
 ## 📑 Ön Koşullar
 - Temel programlama mantığı

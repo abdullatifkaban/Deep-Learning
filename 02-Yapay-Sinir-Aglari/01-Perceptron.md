@@ -1,4 +1,12 @@
-# Perceptron ve Sinir Hücreleri
+# Perceptron ve Yapay Sinir Hücreleri
+
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Matematik Temelleri](../01-Temel-Kavramlar/03-Matematik-Temelleri.md)
+- Sonraki Bölüm: [Çok Katmanlı Ağlar](02-Cok-Katmanli-Aglar.md)
+- Tahmini Süre: 3-4 saat
+- Zorluk Seviyesi: 🟢 Başlangıç
+
+## 🎯 Hedefler
 
 ## Biyolojik Sinir Hücresi
 

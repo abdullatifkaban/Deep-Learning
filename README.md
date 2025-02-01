@@ -1,4 +1,13 @@
-# Derin Öğrenme Temelleri
+# Derin Öğrenme Eğitimi
+
+## 📍 İçerik Haritası
+- [Temel Kavramlar](01-Temel-Kavramlar/)
+- [Yapay Sinir Ağları](02-Yapay-Sinir-Aglari/)
+- [Derin Öğrenme Modelleri](03-Derin-Ogrenme-Modelleri/)
+- [Pratik Uygulamalar](04-Pratik-Uygulamalar/)
+- [Deployment](06-Deployment/)
+
+## 🎯 Hedefler
 
 Bu depo, derin öğrenme konusunda sıfırdan ileri seviyeye kadar olan kavramları Türkçe kaynak olarak sunmayı amaçlamaktadır.
 

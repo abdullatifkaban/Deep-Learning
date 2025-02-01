@@ -1,10 +1,32 @@
 # Yapay Zeka, Makine Öğrenmesi ve Derin Öğrenme
 
+## 📍 Bölüm Haritası
+- Sonraki Bölüm: [Python ve Kütüphaneler](02-Python-Kutuphaneler.md)
+- Tahmini Süre: 2-3 saat
+- Zorluk Seviyesi: 🟢 Başlangıç
+
 ## 🎯 Hedefler
 - Yapay zeka, ML ve DL arasındaki farkları anlama
 - Temel kavramları ve terminolojiyi öğrenme
 - Uygulama alanlarını ve örnekleri kavrama
 - Tarihsel gelişimi ve güncel trendleri anlama
+
+## 🎯 Öz Değerlendirme
+- [ ] AI, ML ve DL arasındaki farkları açıklayabiliyorum
+- [ ] Temel kavramları ve terminolojiyi anlayabildim
+- [ ] Uygulama alanlarını ve örnekleri kavrayabildim
+- [ ] Alıştırmaları tamamlayabildim
+
+## 🚀 Mini Projeler
+1. AI Uygulama Analizi
+   - Günlük hayatta karşılaştığınız 5 AI uygulamasını belirleyin
+   - Her birinin hangi AI türüne ait olduğunu açıklayın
+   - Kullanılan teknolojileri araştırın
+
+2. ML vs DL Karşılaştırması
+   - Bir problem seçin (örn: görüntü sınıflandırma)
+   - Klasik ML ve DL yaklaşımlarını karşılaştırın
+   - Avantaj ve dezavantajları listeleyin
 
 ## 📑 Ön Koşullar
 - Temel matematik bilgisi

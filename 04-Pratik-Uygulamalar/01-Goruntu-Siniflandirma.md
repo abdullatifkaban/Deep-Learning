@@ -1,10 +1,33 @@
 # Görüntü Sınıflandırma
 
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Transformers](../03-Derin-Ogrenme-Modelleri/04-Transformers.md)
+- Sonraki Bölüm: [Doğal Dil İşleme](02-Dogal-Dil-Isleme.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
+
 ## 🎯 Hedefler
 - Temel görüntü sınıflandırma modellerini oluşturma
 - Veri ön işleme ve artırma tekniklerini uygulama
 - Transfer learning ve fine-tuning yapabilme
 - Model performansını değerlendirme ve iyileştirme
+
+## 🎯 Öz Değerlendirme
+- [ ] Veri ön işleme ve artırma tekniklerini uygulayabiliyorum
+- [ ] CNN modellerini oluşturup eğitebiliyorum
+- [ ] Transfer learning ve fine-tuning yapabiliyorum
+- [ ] Model performansını değerlendirebiliyorum
+
+## 🚀 Mini Projeler
+1. Evcil Hayvan Sınıflandırıcı
+   - Kedi/köpek fotoğrafları toplayın
+   - Veri artırma teknikleri uygulayın
+   - Transfer learning ile model eğitin
+
+2. Gerçek Zamanlı Sınıflandırma
+   - Webcam ile canlı görüntü alın
+   - Önceden eğitilmiş modeli kullanın
+   - FPS optimizasyonu yapın
 
 ## 📑 Ön Koşullar
 - CNN mimarisi ve çalışma prensibi

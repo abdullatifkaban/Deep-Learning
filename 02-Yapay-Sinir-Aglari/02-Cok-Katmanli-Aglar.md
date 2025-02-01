@@ -1,6 +1,12 @@
-# Çok Katmanlı Yapay Sinir Ağları
+# Çok Katmanlı Sinir Ağları
 
-## Giriş
+## 📍 Bölüm Haritası
+- Önceki Bölüm: [Perceptron](01-Perceptron.md)
+- Sonraki Bölüm: [CNN Mimarisi](../03-Derin-Ogrenme-Modelleri/01-CNN.md)
+- Tahmini Süre: 4-5 saat
+- Zorluk Seviyesi: 🟡 Orta
+
+## 🎯 Hedefler
 
 Çok Katmanlı Ağlar (Multilayer Perceptron - MLP), tek katmanlı perceptron'un sınırlamalarını aşmak için geliştirilmiş daha karmaşık yapılardır.
 

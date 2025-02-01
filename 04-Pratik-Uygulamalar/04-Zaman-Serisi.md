@@ -1,5 +1,11 @@
 # Zaman Serisi Analizi
 
+## �� Bölüm Haritası
+- Önceki Bölüm: [Nesne Tespiti](03-Nesne-Tespiti.md)
+- Sonraki Bölüm: [Model Deployment](../06-Deployment/01-Model-Deployment.md)
+- Tahmini Süre: 5-6 saat
+- Zorluk Seviyesi: 🟡 Orta
+
 ## 🎯 Hedefler
 - Zaman serisi verilerini anlama ve ön işleme
 - Farklı tahmin modellerini uygulama
