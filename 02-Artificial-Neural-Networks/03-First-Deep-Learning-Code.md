@@ -27,6 +27,8 @@ x_test = x_test.astype('float32') / 255.0
 print('Eğitim veri seti boyutu:', x_train.shape)
 print('Test veri seti boyutu:', x_test.shape)
 ```
+Eğitim veri seti boyutu: (60000, 28, 28)<br>
+Test veri seti boyutu: (10000, 28, 28)
 
 > [!TIP]
 > - Veri setini 0-1 arasına ölçekleme (normalizasyon), modelin daha iyi öğrenmesini sağlar
@@ -45,6 +47,7 @@ for i in range(5):
     plt.axis('off')
 plt.show()
 ```
+![output](images/output-01.png)
 
 ## 4. Model Mimarisi
 
@@ -104,6 +107,20 @@ history = model.fit(
     verbose=1
 )
 ```
+
+Model: "sequential"
+
+| Layer (type)        | Output Shape       | Param #     |
+|---------------------|--------------------|-------------|
+| flatten (Flatten)   | (None, 784)        | 0           |
+| dense (Dense)       | (None, 128)        | 100,480     |
+| dropout (Dropout)   | (None, 128)        | 0           |
+| dense_1 (Dense)     | (None, 64)         | 8,256       |
+| dense_2 (Dense)     | (None, 10)         | 650         |
+
+Total params: 109,386 (427.29 KB)  
+Trainable params: 109,386 (427.29 KB)  
+Non-trainable params: 0 (0.00 B)
 
 > [!TIP]
 > Eğitim parametreleri:
