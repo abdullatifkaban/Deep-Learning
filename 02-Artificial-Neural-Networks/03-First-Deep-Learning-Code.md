@@ -58,14 +58,19 @@ from keras.layers import Dense, Flatten, Dropout
 
 ```python
 model = Sequential()
+
 # Giriş katmanı - görüntüyü düzleştir
 model.add(Flatten(input_shape=(28, 28)))
+
 # Gizli katman 1
 model.add(Dense(128, activation='relu'))
+
 # Dropout katmanı - aşırı öğrenmeyi önlemek için
 model.add(Dropout(0.2))
+
 # Gizli katman 2
 model.add(Dense(64, activation='relu'))
+
 # Çıkış katmanı - 10 sınıf için (0-9 rakamları)
 model.add(Dense(10, activation='softmax'))
 ```
