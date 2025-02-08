@@ -91,6 +91,20 @@ model.compile(
 model.summary()
 ```
 
+Model: "sequential"
+
+| Layer (type)        | Output Shape       | Param #     |
+|---------------------|--------------------|-------------|
+| flatten (Flatten)   | (None, 784)        | 0           |
+| dense (Dense)       | (None, 128)        | 100,480     |
+| dropout (Dropout)   | (None, 128)        | 0           |
+| dense_1 (Dense)     | (None, 64)         | 8,256       |
+| dense_2 (Dense)     | (None, 10)         | 650         |
+
+Total params: 109,386 (427.29 KB)  
+Trainable params: 109,386 (427.29 KB)  
+Non-trainable params: 0 (0.00 B)
+
 > [!NOTE]
 > - `optimizer`: Ağırlıkları güncellemek için Adam optimizasyon algoritması kullanılıyor
 > - `loss`: Sınıflandırma problemi için uygun kayıp fonksiyonu
@@ -107,21 +121,26 @@ history = model.fit(
     verbose=1
 )
 ```
-
-Model: "sequential"
-
-| Layer (type)        | Output Shape       | Param #     |
-|---------------------|--------------------|-------------|
-| flatten (Flatten)   | (None, 784)        | 0           |
-| dense (Dense)       | (None, 128)        | 100,480     |
-| dropout (Dropout)   | (None, 128)        | 0           |
-| dense_1 (Dense)     | (None, 64)         | 8,256       |
-| dense_2 (Dense)     | (None, 10)         | 650         |
-
-Total params: 109,386 (427.29 KB)  
-Trainable params: 109,386 (427.29 KB)  
-Non-trainable params: 0 (0.00 B)
-
+**Epoch 1/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 7s 4ms/step - accuracy: 0.8348 - loss: 0.5457 - val_accuracy: 0.9567 - val_loss: 0.1442  
+**Epoch 2/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.9537 - loss: 0.1485 - val_accuracy: 0.9690 - val_loss: 0.1017  
+**Epoch 3/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.9675 - loss: 0.1072 - val_accuracy: 0.9668 - val_loss: 0.1099  
+**Epoch 4/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.9712 - loss: 0.0898 - val_accuracy: 0.9711 - val_loss: 0.1006  
+**Epoch 5/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.9763 - loss: 0.0733 - val_accuracy: 0.9754 - val_loss: 0.0866  
+**Epoch 6/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.9790 - loss: 0.0650 - val_accuracy: 0.9754 - val_loss: 0.0891  
+**Epoch 7/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.9812 - loss: 0.0569 - val_accuracy: 0.9774 - val_loss: 0.0862  
+**Epoch 8/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.9826 - loss: 0.0522 - val_accuracy: 0.9756 - val_loss: 0.0858  
+**Epoch 9/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 7s 5ms/step - accuracy: 0.9820 - loss: 0.0541 - val_accuracy: 0.9749 - val_loss: 0.0900  
+**Epoch 10/10**  
+1500/1500 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.9859 - loss: 0.0455 - val_accuracy: 0.9774 - val_loss: 0.0889
 > [!TIP]
 > Eğitim parametreleri:
 > - `epochs`: Veri seti üzerinden 10 kez geçilecek
@@ -153,6 +172,7 @@ plt.legend()
 
 plt.show()
 ```
+![output](images/output-02.png)
 
 ## 8. Test Veri Seti Üzerinde Değerlendirme
 
@@ -178,6 +198,8 @@ for i in range(5):
     plt.axis('off')
 plt.show()
 ```
+![output](images/output-03.png)
+
 
 ## 📚 Önerilen Kaynaklar
 - [TensorFlow MNIST Tutorial](https://www.tensorflow.org/tutorials/quickstart/beginner)
