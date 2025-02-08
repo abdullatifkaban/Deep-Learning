@@ -52,22 +52,22 @@ plt.show()
 ## 4. Model Mimarisi
 
 ```python
-model = tf.keras.Sequential([
-    # Giriş katmanı - görüntüyü düzleştir
-    tf.keras.layers.Flatten(input_shape=(28, 28)),
-    
-    # Gizli katman 1
-    tf.keras.layers.Dense(128, activation='relu'),
-    
-    # Dropout katmanı - aşırı öğrenmeyi önlemek için
-    tf.keras.layers.Dropout(0.2),
-    
-    # Gizli katman 2
-    tf.keras.layers.Dense(64, activation='relu'),
-    
-    # Çıkış katmanı - 10 sınıf için (0-9 rakamları)
-    tf.keras.layers.Dense(10, activation='softmax')
-])
+from keras.models import Sequential
+from keras.layers import Dense, Flatten, Dropout
+```
+
+```python
+model = Sequential()
+# Giriş katmanı - görüntüyü düzleştir
+model.add(Flatten(input_shape=(28, 28)))
+# Gizli katman 1
+model.add(Dense(128, activation='relu'))
+# Dropout katmanı - aşırı öğrenmeyi önlemek için
+model.add(Dropout(0.2))
+# Gizli katman 2
+model.add(Dense(64, activation='relu'))
+# Çıkış katmanı - 10 sınıf için (0-9 rakamları)
+model.add(Dense(10, activation='softmax'))
 ```
 
 > [!IMPORTANT]
