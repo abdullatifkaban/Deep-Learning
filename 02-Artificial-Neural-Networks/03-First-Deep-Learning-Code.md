@@ -180,6 +180,7 @@ plt.show()
 test_loss, test_accuracy = model.evaluate(x_test, y_test, verbose=0)
 print(f'\nTest Doğruluğu: {test_accuracy:.4f}')
 ```
+Test Doğruluğu: 0.9794
 
 ## 9. Tahmin Örneği
 
