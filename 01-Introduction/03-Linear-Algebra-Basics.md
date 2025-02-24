@@ -6,13 +6,13 @@ Lineer cebir, vektörler ve matrisler gibi lineer (doğrusal) matematiksel yapı
 ## Temel Kavramlar
 
 ### 1. Skaler, Vektör, Matris ve Tensör
-- **Skaler:** Tek bir sayı (örneğin, $x = 5$).
-- **Vektör:** Bir sayı dizisi, bir boyutlu dizi (örneğin, $\mathbf{v} = [1, 2, 3]$).
-- **Matris:** Bir sayı tablosu, iki boyutlu dizi (örneğin, $\mathbf{A} = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$).
-- **Tensör:** Daha yüksek boyutlu diziler (örneğin, $\mathcal{T} = \begin{bmatrix} 
+- **Skaler:** Tek bir sayı (örneğin, \( x = 5 \)).
+- **Vektör:** Bir sayı dizisi, bir boyutlu dizi (örneğin, \( \mathbf{v} = [1, 2, 3] \)).
+- **Matris:** Bir sayı tablosu, iki boyutlu dizi (örneğin, \( \mathbf{A} = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \)).
+- **Tensör:** Daha yüksek boyutlu diziler (örneğin, \( \mathcal{T} = \begin{bmatrix} 
 \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} &
 \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}
-\end{bmatrix}$ 3-boyutlu tensör).
+\end{bmatrix} \) 3-boyutlu tensör).
 
 ![Tensörler](https://wikidocs.net/images/page/229560/Tensors.png)
 
