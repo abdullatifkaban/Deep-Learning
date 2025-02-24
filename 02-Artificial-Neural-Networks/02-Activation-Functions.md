@@ -91,9 +91,9 @@ def leaky_relu(x, alpha=0.01):
 activation = tf.keras.layers.LeakyReLU(alpha=0.01)
 ```
 
-![Leaky ReLU](https://www.researchgate.net/publication/358306930/figure/fig2/AS:1119417702318091@1643901386378/ReLU-activation-function-vs-LeakyReLU-activation-function.png)
+![Leaky ReLU](https://miro.medium.com/v2/resize:fit:720/format:webp/0*6DZve_x3t08PcwYm.JPG)
 
-[Kaynak](https://www.researchgate.net/publication/358306930/figure/fig2/AS:1119417702318091@1643901386378/ReLU-activation-function-vs-LeakyReLU-activation-function.png)
+[Kaynak](https://miro.medium.com/v2/resize:fit:720/format:webp/0*6DZve_x3t08PcwYm.JPG)
 
 **Özellikleri:**
 - ReLU'nun ölü nöron problemini çözer
