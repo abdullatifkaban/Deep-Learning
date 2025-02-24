@@ -23,10 +23,10 @@ Yapay sinir ağlarında her nöron, girişlerden gelen bilgiyi ağırlıklarla �
 $$ z = \sum_{i=1}^{n} w_i x_i + b $$
 
 Burada:
-- $ x_i $: Giriş değerleri
-- $ w_i $: Ağırlık katsayıları
-- $ b $: Bias terimi
-- $ z $: Net giriş değeri
+- $x_i$: Giriş değerleri
+- $w_i : Ağırlık katsayıları
+- $b$: Bias terimi
+- $z$: Net giriş değeri
 
 Bu net giriş, bir aktivasyon fonksiyonuna uygulanarak çıkış değeri hesaplanır:
 
