@@ -2,6 +2,8 @@
 
 Bu örnekte yapay sinir ağı ile Sınıflandırma modeli geliştireceğiz.
 
+> Projede kullanılacak verileri [buradan](../Data/pima-indians-diabetes.csv) indirebilirsiniz.
+
 ```python
 import pandas as pd
 
