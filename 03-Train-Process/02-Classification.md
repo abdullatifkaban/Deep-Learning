@@ -4,6 +4,13 @@ Bu örnekte yapay sinir ağı ile Sınıflandırma modeli geliştireceğiz.
 
 > Projede kullanılacak verileri [buradan](../Data/pima-indians-diabetes.csv) indirebilirsiniz.
 
+
+**Veri Yükleme:**
+- pandas kütüphanesi veri analizi için Python'ın en önemli araçlarından biridir
+- `read_csv()` fonksiyonu ile CSV formatındaki veri setimizi okuyoruz
+- `head()` fonksiyonu ile ilk 5 satırı görüntülüyoruz
+- Bu veri seti, Pima Yerlileri'nde diyabet hastalığının teşhisi için kullanılan özellikleri içerir
+
 ```python
 import pandas as pd
 
@@ -15,16 +22,16 @@ df.head()
 |--:|------------:|---------:|---------------:|--------------:|---------:|-----:|------------------------:|----:|---------:|
 | **0** |           6 |      148 |            72 |            35 |        0 | 33.6 |                  0.627 |   50 |        1 |
 | **1** |           1 |       85 |            66 |            29 |        0 | 26.6 |                  0.351 |   31 |        0 |
-| **2** |           2 |      183 |            64 |             0 |        0 | 23.3 |                  0.672 |   32 |        1 |
+| **2** |           8 |      183 |            64 |             0 |        0 | 23.3 |                  0.672 |   32 |        1 |
 | **3** |           1 |       89 |            66 |            23 |       94 | 28.1 |                  0.167 |   21 |        0 |
 | **4** |           0 |      137 |            40 |            35 |      168 | 43.1 |                  2.288 |   33 |        1 |
 
 
-**Veri Yükleme:**
-- pandas kütüphanesi veri analizi için Python'ın en önemli araçlarından biridir
-- `read_csv()` fonksiyonu ile CSV formatındaki veri setimizi okuyoruz
-- `head()` fonksiyonu ile ilk 5 satırı görüntülüyoruz
-- Bu veri seti, Pima Yerlileri'nde diyabet hastalığının teşhisi için kullanılan özellikleri içerir
+**Veri Ön İşleme:**
+- Veriyi bağımlı (y) ve bağımsız (x) değişkenler olarak ayırıyoruz
+- `drop()` fonksiyonu ile "Outcome" sütununu x'ten çıkarıyoruz
+- `scale()` fonksiyonu ile verileri standartlaştırıyoruz (ortalama=0, standart sapma=1)
+- Standartlaştırma, modelin daha iyi öğrenmesini sağlar
 
 ```python
 x = df.drop("Outcome", axis=1)
@@ -36,17 +43,18 @@ from sklearn.preprocessing import scale, normalize
 x = scale(x)
 ```
 
-**Veri Ön İşleme:**
-- Veriyi bağımlı (y) ve bağımsız (x) değişkenler olarak ayırıyoruz
-- `drop()` fonksiyonu ile "Outcome" sütununu x'ten çıkarıyoruz
-- `scale()` fonksiyonu ile verileri standartlaştırıyoruz (ortalama=0, standart sapma=1)
-- Standartlaştırma, modelin daha iyi öğrenmesini sağlar
-
 ```python
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 ```
+**Model Oluşturma:**
+- TensorFlow, derin öğrenme için kullanılan güçlü bir kütüphanedir
+- Sequential model, katmanların sıralı bir şekilde eklendiği en basit model tipidir
+- Model mimarisi:
+  - İlk katman: 12 nöron, ReLU aktivasyon fonksiyonu
+  - Gizli katman: 8 nöron, ReLU aktivasyon fonksiyonu
+  - Çıkış katmanı: 1 nöron, Sigmoid aktivasyon fonksiyonu (0-1 arası çıktı için)
 
 ```python
 model = Sequential()
@@ -55,13 +63,15 @@ model.add(Dense(8, activation="relu"))
 model.add(Dense(1, activation="sigmoid"))
 ```
 
-**Model Oluşturma:**
-- TensorFlow, derin öğrenme için kullanılan güçlü bir kütüphanedir
-- Sequential model, katmanların sıralı bir şekilde eklendiği en basit model tipidir
-- Model mimarisi:
-  - İlk katman: 12 nöron, ReLU aktivasyon fonksiyonu
-  - Gizli katman: 8 nöron, ReLU aktivasyon fonksiyonu
-  - Çıkış katmanı: 1 nöron, Sigmoid aktivasyon fonksiyonu (0-1 arası çıktı için)
+**Model Eğitimi:**
+- `compile()` fonksiyonu ile model yapılandırması:
+  - loss: İkili sınıflandırma için binary_crossentropy
+  - optimizer: Adam optimizasyon algoritması
+  - metrics: Doğruluk oranı takibi
+- `fit()` fonksiyonu ile model eğitimi:
+  - epochs=50: Veri seti üzerinden 50 kez geçiş
+  - batch_size=10: Her seferde 10 örnek işleme
+  - validation_split=.2: Verinin %20'si doğrulama için ayrılıyor
 
 ```python
 model.compile(loss="binary_crossentropy", 
@@ -89,15 +99,12 @@ Epoch 49/50 <br>
 Epoch 50/50 <br>
 **62/62** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **0s** 7ms/step - accuracy: 0.7986 - loss: 0.4442 - val_accuracy: 0.7597 - val_loss: 0.4916
 
-**Model Eğitimi:**
-- `compile()` fonksiyonu ile model yapılandırması:
-  - loss: İkili sınıflandırma için binary_crossentropy
-  - optimizer: Adam optimizasyon algoritması
-  - metrics: Doğruluk oranı takibi
-- `fit()` fonksiyonu ile model eğitimi:
-  - epochs=50: Veri seti üzerinden 50 kez geçiş
-  - batch_size=10: Her seferde 10 örnek işleme
-  - validation_split=.2: Verinin %20'si doğrulama için ayrılıyor
+**Model Değerlendirme ve Tahmin**
+- `evaluate()` fonksiyonu ile modelin performansını ölçüyoruz
+- Loss değeri modelin hata oranını gösterir
+- Accuracy değeri modelin doğruluk oranını gösterir
+- `predict()` fonksiyonu ile yeni tahminler yapabiliriz
+- Çıktı 0-1 arasında olasılık değerleridir (0: Diyabet değil, 1: Diyabet)
 
 ```python
 print("\nModel Değerlendirme:")
@@ -123,12 +130,19 @@ Accuracy: 0.7982<br>
  [0.01699266]<br>
  [0.95399505]]<br>
 
-**Model Değerlendirme ve Tahmin Açıklaması:**
-- `evaluate()` fonksiyonu ile modelin performansını ölçüyoruz
-- Loss değeri modelin hata oranını gösterir
-- Accuracy değeri modelin doğruluk oranını gösterir
-- `predict()` fonksiyonu ile yeni tahminler yapabiliriz
-- Çıktı 0-1 arasında olasılık değerleridir (0: Diyabet değil, 1: Diyabet)
+**Modelin Başarı Grafiği**
+
+Modelin eğitim ve kayıp verilerini bir grafikle inceleyelim.
+
+```python
+import matplotlib.pyplot as plt
+
+plt.plot(history.history["accuracy"], label="Accuracy")
+plt.plot(history.history["val_accuracy"], label="Val Accuracy")
+plt.legend()
+```
+![output](images/output-01.png)
+
 ## Sonuç
 
 Geliştirdiğimiz derin öğrenme modeli, Pima Yerlileri diyabet veri setinde yaklaşık %80 doğruluk oranına ulaşmıştır. Bu, sağlık alanında makul bir başarı oranıdır, ancak iyileştirme yapılabilir.
