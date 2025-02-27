@@ -17,6 +17,7 @@ Bu repository, derin öğrenme konusunda kapsamlı bir eğitim serisi sunmaktad�
 ### Derin Öğrenme Süreci
 - [Temel Yapay Sinir Ağı](03-Train-Process/01-Artificia_Neural_Networks.md)
 - [Sınıflandırma Modeli](03-Train-Process/02-Classification.md)
+- [Regresyon Modeli](03-Train-Process/03-Regression.md)
 
 ## 🎯 Hedef Kitle
 Bu eğitim serisi:

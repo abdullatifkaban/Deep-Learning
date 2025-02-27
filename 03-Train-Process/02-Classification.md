@@ -83,19 +83,14 @@ history = model.fit(x, y, epochs=50, batch_size=10,
 ```
 
 Epoch 1/50 <br>
-**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **3s** 13ms/step - accuracy: 0.6650 - loss: 0.6353 - val_accuracy: 0.6818 - val_loss: 0.6167
-
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **3s** 13ms/step - accuracy: 0.6650 - loss: 0.6353 - val_accuracy: 0.6818 - val_loss: 0.6167<br>
 Epoch 2/50 <br>
-**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 9ms/step - accuracy: 0.6811 - loss: 0.6078 - val_accuracy: 0.6883 - val_loss: 0.5790
-
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 9ms/step - accuracy: 0.6811 - loss: 0.6078 - val_accuracy: 0.6883 - val_loss: 0.5790<br>
 Epoch 3/50 <br>
-**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 8ms/step - accuracy: 0.6987 - loss: 0.5694 - val_accuracy: 0.7208 - val_loss: 0.5545
-
-...
-
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 8ms/step - accuracy: 0.6987 - loss: 0.5694 - val_accuracy: 0.7208 - val_loss: 0.5545<br>
+...<br>
 Epoch 49/50 <br>
-**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 7ms/step - accuracy: 0.8254 - loss: 0.3963 - val_accuracy: 0.7597 - val_loss: 0.4932
-
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 7ms/step - accuracy: 0.8254 - loss: 0.3963 - val_accuracy: 0.7597 - val_loss: 0.4932<br>
 Epoch 50/50 <br>
 **62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **0s** 7ms/step - accuracy: 0.7986 - loss: 0.4442 - val_accuracy: 0.7597 - val_loss: 0.4916
 
