@@ -83,21 +83,21 @@ history = model.fit(x, y, epochs=50, batch_size=10,
 ```
 
 Epoch 1/50 <br>
-**62/6**2 <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **3s** 13ms/step - accuracy: 0.6650 - loss: 0.6353 - val_accuracy: 0.6818 - val_loss: 0.6167
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **3s** 13ms/step - accuracy: 0.6650 - loss: 0.6353 - val_accuracy: 0.6818 - val_loss: 0.6167
 
 Epoch 2/50 <br>
-**62/62** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **1s** 9ms/step - accuracy: 0.6811 - loss: 0.6078 - val_accuracy: 0.6883 - val_loss: 0.5790
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 9ms/step - accuracy: 0.6811 - loss: 0.6078 - val_accuracy: 0.6883 - val_loss: 0.5790
 
 Epoch 3/50 <br>
-**62/62** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **1s** 8ms/step - accuracy: 0.6987 - loss: 0.5694 - val_accuracy: 0.7208 - val_loss: 0.5545
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 8ms/step - accuracy: 0.6987 - loss: 0.5694 - val_accuracy: 0.7208 - val_loss: 0.5545
 
 ...
 
 Epoch 49/50 <br>
-**62/62** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **1s** 7ms/step - accuracy: 0.8254 - loss: 0.3963 - val_accuracy: 0.7597 - val_loss: 0.4932
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 7ms/step - accuracy: 0.8254 - loss: 0.3963 - val_accuracy: 0.7597 - val_loss: 0.4932
 
 Epoch 50/50 <br>
-**62/62** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **0s** 7ms/step - accuracy: 0.7986 - loss: 0.4442 - val_accuracy: 0.7597 - val_loss: 0.4916
+**62/62** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **0s** 7ms/step - accuracy: 0.7986 - loss: 0.4442 - val_accuracy: 0.7597 - val_loss: 0.4916
 
 **Model Değerlendirme ve Tahmin**
 - `evaluate()` fonksiyonu ile modelin performansını ölçüyoruz
@@ -117,10 +117,10 @@ print("\nÖrnek Tahminler:")
 print(predictions[:5])
 ```
 Model Değerlendirme: <br>
-**24/24** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **0s** 8ms/step - accuracy: 0.7806 - loss: 0.4507<br>
+**24/24** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **0s** 8ms/step - accuracy: 0.7806 - loss: 0.4507<br>
 Loss: 0.4257<br>
 Accuracy: 0.7982<br>
-**24/24** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **0s** 3ms/step  <br>
+**24/24** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **0s** 3ms/step  <br>
 
 
 Örnek Tahminler:<br>

@@ -72,16 +72,16 @@ history = model.fit(x_train, y_train,
                     epochs=20, batch_size=64, verbose=1)
 ```
 Epoch 1/20<br>
-**238/238** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **7s** 14ms/step - loss: 14684349440.0000 - val_loss: 14378359808.0000<br>
+**238/238** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **7s** 14ms/step - loss: 14684349440.0000 - val_loss: 14378359808.0000<br>
 Epoch 2/20<br>
-**238/238** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **1s** 4ms/step - loss: 13463132160.0000 - val_loss: 15057628160.0000<br>
+**238/238** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 4ms/step - loss: 13463132160.0000 - val_loss: 15057628160.0000<br>
 Epoch 3/20<br>
-**238/238** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **1s** 3ms/step - loss: 14003663872.0000 - val_loss: 14628977664.0000<br>
+**238/238** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 3ms/step - loss: 14003663872.0000 - val_loss: 14628977664.0000<br>
 ...<br>
 Epoch 19/20<br>
-**238/238** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **1s** 4ms/step - loss: 11650306048.0000 - val_loss: 11404175360.0000<br>
+**238/238** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 4ms/step - loss: 11650306048.0000 - val_loss: 11404175360.0000<br>
 Epoch 20/20<br>
-**238/238** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **1s** 4ms/step - loss: 10592477184.0000 - val_loss: 11160828928.0000
+**238/238** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 4ms/step - loss: 10592477184.0000 - val_loss: 11160828928.0000
 
 ### 6. Tahmin ve Model Değerlendirme
 
@@ -90,7 +90,7 @@ Test verileri üzerinde tahmin yapıp, modeli değerlendirelim:
 ```python
 tahmin = model.predict(x_test)
 ```
-**119/119** <span style="color:green">━━━━━━━━━━━━━━━━━━━━</span> **1s** 5ms/step
+**119/119** <code style="color:green">━━━━━━━━━━━━━━━━━━━━</code> **1s** 5ms/step
 
 ```python
 from sklearn.metrics import r2_score, mean_squared_error
