@@ -3,7 +3,7 @@
 Loss fonksiyonları, derin öğrenme modellerinin başarısını değerlendirmede ve optimize etmede kullanılan temel matematik araçlarıdır. Bu fonksiyonlar, modelin tahminleri ile gerçek değerler arasındaki sapmanın nicel bir ölçüsünü sağlar ve modelin eğitimi sırasında bu sapmanın minimize edilmesine rehberlik eder.
 
 ## 1. Categorical Cross-Entropy
-Çok sınıflı sınıflandırma problemlerinin standardı olan bu fonksiyon, görüntü sınıflandırma, duygu analizi, nesne tanıma gibi birden fazla sınıf içeren problemlerde kullanılır. Her bir sınıf için olasılık dağılımı üreterek, doğru sınıfın olasılığını maksimize etmeye çalışır.
+**Çok sınıflı sınıflandırma** problemlerinin standardı olan bu fonksiyon, görüntü sınıflandırma, duygu analizi, nesne tanıma gibi birden fazla sınıf içeren problemlerde kullanılır. Her bir sınıf için olasılık dağılımı üreterek, doğru sınıfın olasılığını maksimize etmeye çalışır.
 
 ```python
 import tensorflow as tf
@@ -11,35 +11,35 @@ import tensorflow as tf
 loss = tf.keras.losses.CategoricalCrossentropy()
 ```
 
-### Özellikleri:
+### 🔍 Özellikleri:
 - One-hot encoded etiketlerle çalışır (örn: [0,1,0] şeklinde)
 - Softmax aktivasyon fonksiyonu ile birlikte optimum performans gösterir
 - Sınıflar arası dengeli bir öğrenme sağlar
 - Gradyan patlaması/sönmesi problemlerine karşı dirençlidir
 
 ## 2. Binary Cross-Entropy
-İkili sınıflandırma problemlerinin vazgeçilmez loss fonksiyonudur. Özellikle görüntü sınıflandırma, spam tespiti, hastalık teşhisi gibi evet/hayır kararlarının verildiği durumlarda kullanılır. Matematiksel olarak, tahmin edilen olasılıkların log-likelihood değerini maksimize etmeye çalışır.
+**İkili sınıflandırma** problemlerinin vazgeçilmez loss fonksiyonudur. Özellikle görüntü sınıflandırma, spam tespiti, hastalık teşhisi gibi evet/hayır kararlarının verildiği durumlarda kullanılır. Matematiksel olarak, tahmin edilen olasılıkların log-likelihood değerini maksimize etmeye çalışır.
 
 ```python
 def binary_cross_entropy(y_true, y_pred):
     return -np.mean(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred))
 ```
 
-### Özellikleri:
+### 🔍 Özellikleri:
 - Sigmoid aktivasyon fonksiyonu ile birlikte kullanılır
 - 0'a yakın yanlış tahminleri ve 1'e yakın doğru tahminleri teşvik eder
 - Gradyan değerleri otomatik olarak ölçeklenir
 - Dengesiz veri setlerinde class_weight parametresi ile desteklenebilir
 
 ## 3. Mean Squared Error (MSE)
-Regresyon problemlerinin temel taşı olan MSE, tahmin edilen değerler ile gerçek değerler arasındaki farkın karesinin ortalamasını hesaplar. Bu fonksiyon, özellikle ev fiyatı tahmini, hava sıcaklığı öngörüsü gibi sürekli değer tahminlerinde tercih edilir.
+**Regresyon** problemlerinin temel taşı olan MSE, tahmin edilen değerler ile gerçek değerler arasındaki farkın karesinin ortalamasını hesaplar. Bu fonksiyon, özellikle ev fiyatı tahmini, hava sıcaklığı öngörüsü gibi sürekli değer tahminlerinde tercih edilir.
 
 ```python
 def mse_loss(y_true, y_pred):
     return np.mean((y_true - y_pred) ** 2)
 ```
 
-### Özellikleri:
+### 🔍 Özellikleri:
 - Her zaman pozitif değer üretir, çünkü farkların karesi alınır
 - Büyük hatalar karesel olarak cezalandırılır, bu nedenle aykırı değerlere karşı hassastır
 - Türevi kolay hesaplanabilir, bu da gradyan inişi için avantaj sağlar
@@ -53,7 +53,7 @@ def mae_loss(y_true, y_pred):
     return np.mean(np.abs(y_true - y_pred))
 ```
 
-### Özellikleri:
+### 🔍 Özellikleri:
 - Mutlak değer kullanıldığı için aykırı değerlere karşı MSE'den daha dayanıklıdır
 - Her zaman pozitif değer üretir
 - Lineer ölçekleme sağlar, büyük hataları MSE kadar şiddetli cezalandırmaz
@@ -71,14 +71,14 @@ def huber_loss(y_true, y_pred, delta=1.0):
     return np.mean(np.where(is_small_error, squared_loss, linear_loss))
 ```
 
-### Özellikleri:
+### 🔍 Özellikleri:
 - Delta parametresi ile MSE ve MAE arasında geçiş yapılabilir
 - Aykırı değerlere karşı MSE'den daha dayanıklıdır
 - Küçük hatalar için karesel, büyük hatalar için lineer ceza uygular
 - Regresyon problemlerinde dengeli bir seçenek sunar
 
 ## 6. Focal Loss
-Dengesiz veri setlerinde sınıflandırma problemleri için tasarlanmış özel bir kayıp fonksiyonudur. Zor örneklere daha fazla ağırlık vererek, modelin sık görülen örnekler yerine nadir görülen örneklere odaklanmasını sağlar.
+Dengesiz veri setlerinde **sınıflandırma** problemleri için tasarlanmış özel bir kayıp fonksiyonudur. Zor örneklere daha fazla ağırlık vererek, modelin sık görülen örnekler yerine nadir görülen örneklere odaklanmasını sağlar.
 
 ```python
 def focal_loss(y_true, y_pred, gamma=2.0):
@@ -87,7 +87,7 @@ def focal_loss(y_true, y_pred, gamma=2.0):
     return tf.mean((1 - pt) ** gamma * ce)
 ```
 
-### Özellikleri:
+### 🔍 Özellikleri:
 - Dengesiz veri setlerinde performansı artırır
 - Gamma parametresi ile kolay/zor örnekler arasındaki denge ayarlanabilir
 - Binary Cross-Entropy'nin geliştirilmiş versiyonudur
@@ -101,7 +101,7 @@ def kl_divergence(p, q):
     return tf.reduce_sum(p * tf.math.log(p / q))
 ```
 
-### Özellikleri:
+### 🔍 Özellikleri:
 - Dağılımlar arasındaki benzerliği ölçer
 - Asimetrik bir metriktir (KL(P||Q) ≠ KL(Q||P))
 - Information theory temelli bir yaklaşımdır

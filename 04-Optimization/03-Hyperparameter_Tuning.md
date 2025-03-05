@@ -31,8 +31,8 @@ optimizer_low_lr = Adam(learning_rate=0.001)
 # Model derlemesinde kullanılacak öğrenme oranı, deneysel olarak ayarlanır.
 model.compile(optimizer=optimizer_low_lr, loss='binary_crossentropy', metrics=['accuracy'])
 ```
-
-**Not:** Genellikle başlangıç için 0.001 değeri tercih edilir. Modelin eğitim kaybı ve doğruluk grafikleri takip edilerek öğrenme oranı ayarlanabilir.
+> [!NOTE]
+> **Not:** Genellikle başlangıç için 0.001 değeri tercih edilir. Modelin eğitim kaybı ve doğruluk grafikleri takip edilerek öğrenme oranı ayarlanabilir.
 
 
 ## 3. Batch Size
@@ -53,7 +53,8 @@ batch_size = 16
 history = model.fit(X, y, epochs=100, batch_size=batch_size, verbose=1)
 ```
 
-**Not:** Batch size, veri seti büyüklüğüne ve kullanılan donanıma göre ayarlanmalıdır.
+> [!NOTE]
+> **Not:** Batch size, veri seti büyüklüğüne ve kullanılan donanıma göre ayarlanmalıdır.
 
 
 ## 4. Epoch Sayısı
@@ -74,7 +75,8 @@ epochs = 100
 history = model.fit(X, y, epochs=epochs, batch_size=batch_size, verbose=1)
 ```
 
-**Not:** Eğitim sırasında kayıp ve doğruluk değerlerinin izlenmesi, epoch sayısının yeterliliğini anlamak için önemlidir.
+> [!NOTE]
+> **Not:** Eğitim sırasında kayıp ve doğruluk değerlerinin izlenmesi, epoch sayısının yeterliliğini anlamak için önemlidir.
 
 
 ## 5. Hiperparametre Ayarlamalarında Stratejiler

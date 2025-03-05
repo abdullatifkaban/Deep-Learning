@@ -1,6 +1,6 @@
-### 7. Hiperparametre Uygulama Örnekleri
+# Hiperparametre Uygulama Örnekleri
 
-#### 7.1 Temel Model Oluşturma
+## 1. Temel Model Oluşturma
 
 ```python
 import tensorflow as tf
@@ -36,7 +36,7 @@ def create_base_model():
     return model
 ```
 
-#### 7.2 Öğrenme Oranı Optimizasyonu
+## 2. Öğrenme Oranı Optimizasyonu
 ```python
 learning_rates = [0.1, 0.01, 0.001, 0.0001]
 lr_histories = {}
@@ -94,7 +94,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-#### 7.3 Batch Size Optimizasyonu
+## 3. Batch Size Optimizasyonu
 
 ```python
 batch_sizes = [16, 32, 64, 128]
@@ -154,7 +154,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-#### 7.4 Early Stopping Uygulaması
+## 4. Early Stopping Uygulaması
 
 ```python
 early_stopping = tf.keras.callbacks.EarlyStopping(
@@ -201,7 +201,7 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 ```
-#### 7.5 Öğrenme Oranı Planlaması
+## 5. Öğrenme Oranı Planlaması
 
 ```python
 def step_decay(epoch):
@@ -259,7 +259,7 @@ plt.grid()
 plt.tight_layout()
 plt.show()
 ```
-#### 7.6 Grid Search
+## 6. Grid Search
 
 ```python
 from sklearn.model_selection import GridSearchCV
@@ -313,7 +313,7 @@ print(f"En iyi çapraz doğrulama skoru: {grid_result.best_score_:.4f}")
 test_score = grid_result.score(X_test, y_test)
 print(f"Test seti doğruluk skoru: {test_score:.4f}")
 ```
-#### 7.6 Random Search
+## 7. Random Search
 
 ```Python
 from sklearn.model_selection import RandomizedSearchCV
