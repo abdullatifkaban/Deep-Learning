@@ -19,6 +19,12 @@ Bu repository, derin öğrenme konusunda kapsamlı bir eğitim serisi sunmaktad�
 - [Sınıflandırma Modeli](03-Train-Process/02-Classification.md)
 - [Regresyon Modeli](03-Train-Process/03-Regression.md)
 
+### Derin Öğrenme Ağlarında Optimizasyon
+- [Optimizasyon Algoritmaları](04-Optimization/01-Optimizers.md)
+- [Kayıp Fonksiyonları](04-Optimization/02-Loss_Functions.md)
+- [Hiperparametre Ayarlamaları](04-Optimization/03-Hyperparameter_Tuning.md)
+- [Hiperparametre Uygulama Örnekleri](04-Optimization/04-Hyperparameter_Examles.md)
+
 ## 🎯 Hedef Kitle
 Bu eğitim serisi:
 - Derin öğrenmeye yeni başlayanlar
