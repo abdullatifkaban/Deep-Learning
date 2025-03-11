@@ -25,6 +25,12 @@ Bu repository, derin öğrenme konusunda kapsamlı bir eğitim serisi sunmaktad�
 - [Hiperparametre Ayarlamaları](04-Optimization/03-Hyperparameter-Tuning.md)
 - [Hiperparametre Uygulama Örnekleri](04-Optimization/04-Hyperparameter-Examles.md)
 
+### Doğal Dil İşleme
+- [NLP'ye Giriş](05-Natural-Language-Processing/01-Introduction-NLP.md)
+- [Derin Öğrenme ve NLP](05-Natural-Language-Processing/02-Deep-Learning-NLP.md)
+- [NLP Uygulama Örneği](05-Natural-Language-Processing/03-NLP-Example.md)
+
+
 ## 🎯 Hedef Kitle
 Bu eğitim serisi:
 - Derin öğrenmeye yeni başlayanlar
@@ -37,6 +43,7 @@ için hazırlanmıştır.
 - TensorFlow
 - NumPy
 - Matplotlib
+- NLTK
 
 ## 🚀 Başlarken
 1. Repository'yi klonlayın
