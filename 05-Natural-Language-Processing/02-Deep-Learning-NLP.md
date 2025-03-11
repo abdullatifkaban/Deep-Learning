@@ -67,6 +67,13 @@ model = Word2Vec(sentences, vector_size=100, window=5, min_count=1)
 
 # Benzer kelimeleri bulma
 similar_words = model.wv.most_similar('nlp')
+similar_words
+```
+> [!TIP]
+> `gensim` kütüphanesini kurmayı unutmayın
+
+```py
+pip install gensim
 ```
 
 #### GloVe (Global Vectors)
@@ -80,6 +87,12 @@ from torchtext.vocab import GloVe
 
 # GloVe vektörlerini yükleme
 glove = GloVe(name='6B', dim=100)
+```
+> [!TIP]
+> `torchtext` kütüphanesini kurmayı unutmayın
+
+```py
+pip install torchtext
 ```
 
 #### FastText
@@ -317,16 +330,23 @@ Transformer mimarisi, 2017 yılında tanıtılan ve NLP alanında devrim yaratan
 - Segment embeddings
 
 ```python
-from transformers import BertTokenizer, BertModel
+from transformers import BertTokenizer, TFBertModel
+import tensorflow as tf
 
 # BERT model ve tokenizer yükleme
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-model = BertModel.from_pretrained('bert-base-uncased')
+model = TFBertModel.from_pretrained('bert-base-uncased')
 
 # Örnek kullanım
 text = "NLP harika bir alan!"
-encoded = tokenizer(text, return_tensors='pt')
-outputs = model(**encoded)
+encoded = tokenizer(text, return_tensors='tf')
+
+# Modeli çalıştırma
+outputs = model(encoded)
+
+# Çıktılara erişim
+last_hidden_states = outputs.last_hidden_state  # Son gizli durumları al
+print(last_hidden_states)
 ```
 
 ### 4.2 GPT (Generative Pre-trained Transformer)
@@ -343,16 +363,23 @@ outputs = model(**encoded)
 - Scaling özellikleri
 
 ```python
-from transformers import GPT2Tokenizer, GPT2Model
+from transformers import GPT2Tokenizer, TFGPT2LMHeadModel
+import tensorflow as tf
 
 # GPT model ve tokenizer yükleme
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
-model = GPT2Model.from_pretrained('gpt2')
+model = TFGPT2LMHeadModel.from_pretrained('gpt2')
 
 # Metin üretimi örneği
 input_text = "Yapay zeka"
-inputs = tokenizer(input_text, return_tensors="pt")
-outputs = model(**inputs)
+inputs = tokenizer(input_text, return_tensors="tf")
+
+# Modeli çalıştırma ve metin üretme
+outputs = model.generate(inputs['input_ids'], max_length=50)  # Max uzunluğa göre metin üretimi
+
+# Üretilen metni çözümleme
+generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+print(generated_text)
 ```
 
 ### 4.3 Transfer Learning ve Fine-tuning
@@ -369,18 +396,65 @@ outputs = model(**inputs)
 - Layer freezing stratejileri
 
 ```python
-from transformers import BertForSequenceClassification
+from transformers import BertTokenizer, TFBertForSequenceClassification
+import tensorflow as tf
 
-# Fine-tuning için model hazırlama
-model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)
+# Tokenizer ve model yükleme
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+model = TFBertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)
 
-# Fine-tuning parametreleri
-training_args = TrainingArguments(
-    output_dir='./results',
-    num_train_epochs=3,
-    per_device_train_batch_size=16,
-    learning_rate=2e-5
-)
+# Eğitim verilerini hazırlama
+# (Örnek için dummy veriler; kendi verilerinizi kullanmalısınız)
+# Eğitim verilerini hazırlama
+train_texts = [
+    "Bu film gerçekten harikaydı, kesinlikle tavsiye ederim.",  # Olumlu
+    "Film sıkıcıydı ve zaman kaybıydı.",                       # Olumsuz
+    "Oyunculuk mükemmeldi ve hikaye çok etkileyiciydi.",       # Olumlu
+    "Beni hayal kırıklığına uğrattı, beklediğim gibi değildi."  # Olumsuz
+]
+train_labels = [1, 0, 1, 0]  # 1: Olumlu, 0: Olumsuz
+
+# Tokenize etme
+train_encodings = tokenizer(train_texts, truncation=True, padding=True, return_tensors='tf')
+
+# TensorFlow dataset oluşturma
+train_dataset = tf.data.Dataset.from_tensor_slices((
+    dict(train_encodings),
+    train_labels
+)).shuffle(1000).batch(16)
+
+# Modeli derleme
+model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=2e-5),
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              metrics=['accuracy'])
+
+# Modeli eğitme
+model.fit(train_dataset, epochs=3)
+```
+
+```py
+# Yeni metinler
+new_texts = [
+    "Bu dizi gerçekten harika, çok etkileyiciydi, tavsiye ederim.",
+    "Bu kitabı hiç beğenmedim, çok sıkıcıydı."
+]
+
+# Yeni metinleri tokenize etme
+new_encodings = tokenizer(new_texts, truncation=True, padding=True, return_tensors='tf')
+
+# Model ile tahmin yapma
+predictions = model(new_encodings['input_ids'])
+
+# Logit değerlerini softmax ile olasılığa çevirme
+predicted_probs = tf.nn.softmax(predictions.logits, axis=-1)
+
+# En yüksek olasılığa sahip etiketleri alma
+predicted_labels = tf.argmax(predicted_probs, axis=-1).numpy()
+
+# Sonuçları yazdırma
+for text, label in zip(new_texts, predicted_labels):
+    sentiment = "Olumlu" if label == 1 else "Olumsuz"
+    print(f"Metin: '{text}' - Tahmin: {sentiment}")
 ```
 
 ### 4.4 Tokenization Stratejileri
