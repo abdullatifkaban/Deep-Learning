@@ -15,15 +15,15 @@ Bu repository, derin öğrenme konusunda kapsamlı bir eğitim serisi sunmaktad�
 - [İlk Derin Öğrenme Uygulamamız](02-Artificial-Neural-Networks/03-First-Deep-Learning-Code.md)
 
 ### Derin Öğrenme Süreci
-- [Temel Yapay Sinir Ağı](03-Train-Process/01-Artificia_Neural_Networks.md)
+- [Temel Yapay Sinir Ağı](03-Train-Process/01-Artificia-Neural-Networks.md)
 - [Sınıflandırma Modeli](03-Train-Process/02-Classification.md)
 - [Regresyon Modeli](03-Train-Process/03-Regression.md)
 
 ### Derin Öğrenme Ağlarında Optimizasyon
 - [Optimizasyon Algoritmaları](04-Optimization/01-Optimizers.md)
-- [Kayıp Fonksiyonları](04-Optimization/02-Loss_Functions.md)
-- [Hiperparametre Ayarlamaları](04-Optimization/03-Hyperparameter_Tuning.md)
-- [Hiperparametre Uygulama Örnekleri](04-Optimization/04-Hyperparameter_Examles.md)
+- [Kayıp Fonksiyonları](04-Optimization/02-Loss-Functions.md)
+- [Hiperparametre Ayarlamaları](04-Optimization/03-Hyperparameter-Tuning.md)
+- [Hiperparametre Uygulama Örnekleri](04-Optimization/04-Hyperparameter-Examles.md)
 
 ## 🎯 Hedef Kitle
 Bu eğitim serisi:
