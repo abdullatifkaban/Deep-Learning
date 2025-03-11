@@ -21,6 +21,13 @@ Tokenization'ın önemi:
 - Dil modellerinin metni anlamasını sağlar
 - Veri temizleme sürecinin önemli bir parçasıdır
 
+> [!IMPORTANT]
+> NLP işlemleri için `nltk` kütüphanesini kurmak gerekebilir. Aşağıdaki kod ile kurabilirsiniz:
+
+```py
+pip install nltk
+```
+
 ```python
 from nltk.tokenize import word_tokenize, sent_tokenize
 
@@ -34,7 +41,8 @@ text = "NLP önemlidir. Yapay zeka gelişiyor."
 sent_tokens = sent_tokenize(text)
 print(sent_tokens)  # ['NLP önemlidir.', 'Yapay zeka gelişiyor.']
 ```
-
+> [!NOTE]
+> NLP işlemlerinde bazı işlemler için alt kütüphaneler gerekebilir. Kod hata verirse açıklamalarda hangi paketin kurulması gerektiği verilmektedir.
 
 #### Stopwords (Durma Kelimeleri)
 
@@ -68,6 +76,13 @@ filtered_tokens = [word for word in tokens if word.lower() not in stop_words]
 print("Orijinal:", tokens)
 print("Filtrelenmiş:", filtered_tokens)
 ```
+> [!IMPORTANT]
+> Stopwords temizliği için `nltk` kütüphanesinin `punk_tab` parçasını indirmeniz gerekir. Aşağıdaki kod ile indirebilirsiniz
+
+```python
+import nltk
+nltk.download('punkt_tab')
+```
 
 Özel stopwords listesi oluşturma:
 ```python
@@ -77,6 +92,8 @@ custom_stopwords = stop_words.union({'ek', 'kelime'})
 # Özel listeyle filtreleme
 filtered_custom = [word for word in tokens if word.lower() not in custom_stopwords]
 ```
+
+
 #### Lemmatization ve Stemming
 
 Lemmatization ve Stemming, kelimeleri kök veya temel formlarına indirgeme işlemleridir. Bu işlemler, metin analizi ve NLP çalışmalarında çok önemli bir rol oynar.
@@ -118,6 +135,15 @@ print(lemmatized)  # ['good', 'run', 'car']
 
 # POS tag ile kullanım
 print(lemmatizer.lemmatize('better', pos='a'))  # 'good'
+print(lemmatizer.lemmatize('running', pos='v'))  # 'run'
+print(lemmatizer.lemmatize('cars', pos='n'))  # 'car'
+```
+> [!IMPORTANT]
+> WordNetLemmatizer kullanmak için `nltk` kütüphanesinin `wordnet` parçasını indirmeniz gerekir. Aşağıdaki kod ile indirebilirsiniz
+
+```python
+import nltk
+nltk.download('wordnet')
 ```
 
 Türkçe için Lemmatization örneği:
@@ -129,6 +155,12 @@ analyzer = zeyrek.MorphAnalyzer()
 word = "kitaplardan"
 analysis = analyzer.lemmatize(word)
 print(analysis)  # [('kitap', ...)]
+```
+> [!IMPORTANT]
+> Zeyrek kütüphanesini kurmak gerekebilir. Aşağıdaki kod ile kurabilirsiniz:
+
+```py
+pip install zeyrek
 ```
 
 Kullanım alanları:
@@ -171,22 +203,6 @@ tokens = word_tokenize(text)
 # POS tagging uygulama
 pos_tags = pos_tag(tokens)
 print(pos_tags)  # [('Python', 'NNP'), ('ile', 'IN'), ...]
-
-# Türkçe için özel POS tagger
-from nltk.tag import CRFTagger
-ct = CRFTagger()
-ct.set_model_file('turkish.crf.model')
-turkish_tags = ct.tag(tokens)
-```
-
-Spacy ile POS Tagging:
-```python
-import spacy
-nlp = spacy.load('tr_core_news_sm')
-doc = nlp("Python programlama dili çok kullanışlıdır")
-
-for token in doc:
-    print(f"{token.text}: {token.pos_}")
 ```
 
 #### Parsing (Ayrıştırma)
@@ -230,6 +246,13 @@ doc = nlp("The quick brown fox jumps over the lazy dog")
 for token in doc:
     print(f"{token.text:>12} --{token.dep_}--> {token.head.text}")
 ```
+> [!IMPORTANT]
+> Spacy kütüphanesini ve alt kütüphanelerini kurmak gerekebilir. Aşağıdaki kodları sırayla çalıştırarak kurabilirsiniz:
+
+```py
+pip install zeyrek
+!python -m spacy download en_core_web_sm
+```
 
 Parsing'in kullanım alanları:
 - Gramer kontrolü
@@ -263,16 +286,16 @@ Spacy ile NER örneği:
 ```python
 import spacy
 
-# Türkçe model yükleme
-nlp = spacy.load("tr_core_news_sm")
+# İngilizce model yükleme
+nlp = spacy.load("en_core_web_sm")
 
 # Örnek metin
-text = "Ahmet Yılmaz, 15 Mart 2024'te Microsoft'un İstanbul ofisinde bir sunum yaptı."
+text = "John Doe gave a presentation at Microsoft's New York office on March 15, 2024."
 doc = nlp(text)
 
 # Varlıkları belirleme
 for ent in doc.ents:
-    print(f"Varlık: {ent.text}\nTip: {ent.label_}\n")
+    print(f"Entity: {ent.text}\nType: {ent.label_}\n")
 ```
 
 NLTK ile NER örneği:
@@ -286,6 +309,14 @@ tokens = word_tokenize(text)
 tagged = pos_tag(tokens)
 entities = ne_chunk(tagged)
 print(entities)
+```
+> [!IMPORTANT]
+> WordNetLemmatizer kullanmak için `nltk` kütüphanesinin `maxent_ne_chunker_tab` ve `` parçalarını indirmeniz gerekir. Aşağıdaki kodlarla sıra ile indirebilirsiniz:
+
+```python
+import nltk
+nltk.download('maxent_ne_chunker_tab')
+nltk.download('words')
 ```
 
 NER kullanım alanları:
@@ -315,21 +346,23 @@ NLTK ile basit WSD örneği:
 ```python
 from nltk.wsd import lesk
 from nltk.tokenize import word_tokenize
+from nltk.corpus import wordnet as wn
 
-# Örnek cümleler
-sentence1 = "Yüz yüze eğitim başladı"
-sentence2 = "Bahçede yüz tane ağaç var"
-sentence3 = "Aynada yüzüne baktı"
+sentences = [
+    "Her face showed a mixture of surprise and joy.", 
+    "Her face displayed a wide range of emotions.",  
+    "She had to face her fears during the presentation.",   
+    "The face of the building was covered in beautiful murals.",  
+]
 
-# Her cümle için 'yüz' kelimesinin anlamını bulma
-word = "yüz"
-sense1 = lesk(word_tokenize(sentence1), word)
-sense2 = lesk(word_tokenize(sentence2), word)
-sense3 = lesk(word_tokenize(sentence3), word)
+# 'face' kelimesinin anlamlarını bulma
+for sentence in sentences:
+    sense = lesk(word_tokenize(sentence), "face")
+    print(f"Meaning: {sense}")
 
-print(f"Anlam 1: {sense1}")
-print(f"Anlam 2: {sense2}")
-print(f"Anlam 3: {sense3}")
+# WordNet'te 'face' kelimesinin anlamlarını kontrol etme
+synsets = wn.synsets("face")
+print(f"WordNet Synsets for 'face': {synsets}")
 ```
 
 Modern WSD yaklaşımları:
@@ -349,9 +382,16 @@ Türkçe WSD için özel durumlar:
 from transformers import pipeline
 nlp = pipeline('fill-mask')
 
-text = "Bankanın [MASK] çok rahattı."
+text = "She was so excited to see the <mask> at the concert."
 results = nlp(text)
-# Olası anlamlar: "koltuğu", "faizi", "çalışanı" vb.
+results
+```
+> [!IMPORTANT]
+> transformers kütüphanesini ve alt kütüphanelerini kurmak gerekebilir. Aşağıdaki kodları sırayla çalıştırarak kurabilirsiniz:
+
+```py
+pip install transformers
+pip install tf_keras
 ```
 
 ## NLP Uygulamaları
