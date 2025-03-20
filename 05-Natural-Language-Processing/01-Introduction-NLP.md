@@ -250,7 +250,7 @@ for token in doc:
 > Spacy kütüphanesini ve alt kütüphanelerini kurmak gerekebilir. Aşağıdaki kodları sırayla çalıştırarak kurabilirsiniz:
 
 ```py
-pip install zeyrek
+pip install spacy
 !python -m spacy download en_core_web_sm
 ```
 

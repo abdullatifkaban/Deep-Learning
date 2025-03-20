@@ -29,6 +29,7 @@ Bu repository, derin öğrenme konusunda kapsamlı bir eğitim serisi sunmaktad�
 - [NLP'ye Giriş](05-Natural-Language-Processing/01-Introduction-NLP.md)
 - [Derin Öğrenme ve NLP](05-Natural-Language-Processing/02-Deep-Learning-NLP.md)
 - [NLP Uygulama Örneği](05-Natural-Language-Processing/03-NLP-Example.md)
+- [Sonraki Kelime Tahmini](05-Natural-Language-Processing/04-Next-Word-Prediction.md)
 
 
 ## 🎯 Hedef Kitle
