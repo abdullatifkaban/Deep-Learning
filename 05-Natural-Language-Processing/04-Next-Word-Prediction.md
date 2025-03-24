@@ -90,10 +90,10 @@ y = np.array(tf.keras.utils.to_categorical(y, num_classes=toplam_ks))
 Sinir ağımızın modelini tanımlayalım.
 ```py
 model = Sequential()
-model.add(Embedding(total_words, 100, input_length=max_sequence_len - 1))
+model.add(Embedding(toplam_ks, 100, input_length=max_sequence_len - 1))
 model.add(LSTM(150, return_sequences=True))
 model.add(LSTM(150))
-model.add(Dense(total_words, activation='softmax'))
+model.add(Dense(toplam_ks, activation='softmax'))
 ```
 
 
