@@ -31,6 +31,10 @@ Bu repository, derin öğrenme konusunda kapsamlı bir eğitim serisi sunmaktad�
 - [NLP Uygulama Örneği](05-Natural-Language-Processing/03-NLP-Example.md)
 - [Sonraki Kelime Tahmini](05-Natural-Language-Processing/04-Next-Word-Prediction.md)
 
+### Bilgisayarla Görü
+- [Bilgisayarla Görüye Giriş](06-Computer-Vision/01-Image-Data-and-Preprocessing.md)
+- [Evrişimli Sinir Ağları (CNN)](06-Computer-Vision/02-Convolutional-Neural-Networks.md)
+- [Fashion MNIST ile Görüntü Sınıflandırma](06-Computer-Vision/03-Fashion-Mnist.md)
 
 ## 🎯 Hedef Kitle
 Bu eğitim serisi:
