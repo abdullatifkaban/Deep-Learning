@@ -49,8 +49,16 @@ grayscale_image.show()
 Dönme, çevirme ve kırpma gibi veri artırma teknikleri, eğitim veri setinin boyutunu yapay olarak artırmak ve modelin dayanıklılığını artırmak için kullanılır.
 
 ```python
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import matplotlib.pyplot as plt
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
 
+# Görüntüyü yükleme
+image_path = 'example.jpg'  # test.jpg dosyasının tam yolunu belirtin
+image = load_img(image_path, target_size=(150, 150))  # Boyutlandırma isteğe bağlı
+image_array = img_to_array(image)
+image_array = np.expand_dims(image_array, axis=0)  # Boyutunu değiştirme
+
+# ImageDataGenerator oluşturma
 datagen = ImageDataGenerator(
     rotation_range=40,
     width_shift_range=0.2,
@@ -61,8 +69,25 @@ datagen = ImageDataGenerator(
     fill_mode='nearest'
 )
 
-# Tek bir görüntüye artırma uygulama örneği
-augmented_image = datagen.random_transform(image_array)
+# Görüntü üzerinde dönüşüm uygulama
+augmented_image = datagen.random_transform(image_array[0])  # İlk (ve tek) resmi al
+
+# Görüntüleri yan yana gösterme
+plt.figure(figsize=(10, 5))
+
+# Orijinal görüntü
+plt.subplot(1, 2, 1)
+plt.imshow(image_array[0].astype('uint8'))
+plt.title('Orijinal Görüntü')
+plt.axis('off')
+
+# Artırılmış görüntü
+plt.subplot(1, 2, 2)
+plt.imshow(augmented_image.astype('uint8'))
+plt.title('Artırılmış Görüntü')
+plt.axis('off')
+
+plt.show()
 ```
 
 ### 5. Histogram Eşitleme
