@@ -5,7 +5,7 @@ Resim sınıflandırma projelerinde kullanılan yöntemlerden birisi; her bir s�
 ![Cat&Dog](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8hcDIg__b6TC3VSyZqFqNtGFHQmvuQJFUow&s)
 [Resim Kaynağı](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8hcDIg__b6TC3VSyZqFqNtGFHQmvuQJFUow&s)
 
-## Resimleri Okuma
+## Hazırlık
 
 1. Öncelikle gerekli kütüphaneleri ekleyelim.
 
@@ -14,37 +14,37 @@ import cv2
 import pandas as pd
 import numpy as np
 import os
-from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 ```
 
 2. Resimlerin bulunduğu ana klasörü ve sınıf isimlerini barındıran listeyi oluşturalım.
 
 ```py
-img_path="dataset/"
+img_path = "dataset/"
 labels = ["cat", "dog"]
 ```
-
-3. Resimlerin yolu ve sınıf isimlerinden oluşan bir data frame oluşturalım. 
+## Resimleri Okuma
+1. Resimlerin yolu ve sınıf isimlerinden oluşan bir data frame oluşturalım.
 ```py
-img_list=[]
-label_list=[]
+img_list = []
+label_list = []
 for label in labels:
     for img_file in os.listdir(img_path+label):
         img_list.append(img_path+label+"/"+img_file)
         label_list.append(label)
 
-df=pd.DataFrame({"img":img_list, "label":label_list})
+df = pd.DataFrame({"img":img_list, "label":label_list})
 ```
-4. Oluşturduğumuz data frame için yeni bir alana sınıfları temsil eden sayılar ekleyelim.
+2. Oluşturduğumuz data frame için yeni bir alana sınıfları temsil eden sayılar ekleyelim.
 
 ```py
-d={"cat":0, "dog":1}
+d = {"cat":0, "dog":1}
 df["encode_label"]= df["label"].map(d)
 ```
-5. Eğitim sırasında problem çıkarmaması için listeyi karıştıralım.
+3. Eğitim sırasında problem çıkarmaması için listeyi karıştıralım.
 ```py
-df=df.sample(frac=1)
+df = df.sample(frac=1)
 df = df.reset_index(drop=True)
 ```
 ## Resim Ön-işleme
@@ -63,14 +63,14 @@ plt.imshow(image)
 size=128
 x=[]
 for imge in df["img"]:
-    img=cv2.imread(str(imge))
+    img = cv2.imread(str(imge))
     # print(imge)
-    img=cv2.resize(img, (size,size))
-    img=img/255.0 
+    img = cv2.resize(img, (size,size))
+    img = img/255.0 
     x.append(img)
 ```
 > [!WARNING]
-> Klasörde okunabilen resim formatları dışında dosya varsa bu aşamada hata ile karşılaşılabilir. Hangi resmin hata verdiğini görebilmek için `print(image)` satırı açılarak kodu tekrar çalıştırın. Hata veren dosya listenin en altındaki dosyadır.
+> Klasörde okunabilen resim formatları dışında dosya varsa bu aşamada hata ile karşılaşılabilir. Hangi resmin hata verdiğini görebilmek için `print(image)` satırı açılarak kodu tekrar çalıştırın. Hata veren dosya listenin en altındaki dosyadır. Klasörde silme işlemi yaptıysanız [Resimleri Okuma](#resimleri-okuma) işlemine geri dönerek kodları tekrar çalıştırınız.
 
 3. Ön-işlemden geçmiş resmin son hali.
 ```py
@@ -83,8 +83,8 @@ plt.imshow(x[0])
 1. Modelin girdi verilerini diziye dönüştürüp modelin çıktı verisi olan 'y' değişkenini oluşturalım.
 
 ```py
-x=np.array(x)
-y=df['encode_label']
+x = np.array(x)
+y = df['encode_label']
 ```
 2. Verileri eğitim ve test olmak üzere parçalayalım.
 
@@ -100,7 +100,7 @@ from keras.layers import Conv2D, Dense, Flatten, MaxPooling2D
 ```
 4. Modeli oluşturalım ve derleyelim.
 ```py
-model=Sequential()
+model = Sequential()
 model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(size, size, 3)))
 model.add(MaxPooling2D(pool_size=(2,2)))
 model.add(Conv2D(64,kernel_size=(3,3),activation='relu'))
@@ -115,11 +115,11 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 5. Modeli eğitelim.
 
 ```py
-history=model.fit(x_train,y_train, validation_data=(x_test,y_test), epochs=100, verbose=1)
+history = model.fit(x_train,y_train, validation_data=(x_test,y_test), epochs=100, verbose=1)
 ```
 6. Test verileri ile modeli test edelim.
 ```py
-tahmin=model.predict(x_test[0:1])
+tahmin = model.predict(x_test[0:1])
 print("İlk resmin etiketi:", y_test[0:1])
 print("Modelin tahmini:", tahmin)
 print("Sınıf etiketleri:", labels)
@@ -154,7 +154,7 @@ pip install bing-image-downloader
 Gerekli kütüphaneyi ekleyip resimleri indirelim.
 ```py
 from bing_image_downloader import downloader
-aranan_ifade="dog"
+aranan_ifade = "dog"
 downloader.download(aranan_ifade, limit=300)
 ```
 Bu kod ile `aranan_ifade` değişkeni ile belirlenen ifade kullanılarak internette arama yapılır, önce `dataset` isminde bir klasör açılır ve bulunan resimler yine aynı isimle açılan alt klasöre indirilir. İndirilecek resim sayısı `limit` parametresi ile belirlenir. Bu projede kullanılan resimler bu yöntemle indirilmiştir.
