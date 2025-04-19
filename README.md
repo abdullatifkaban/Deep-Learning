@@ -35,6 +35,11 @@ Bu repository, derin öğrenme konusunda kapsamlı bir eğitim serisi sunmaktad�
 - [Bilgisayarla Görüye Giriş](06-Computer-Vision/01-Image-Data-and-Preprocessing.md)
 - [Evrişimli Sinir Ağları (CNN)](06-Computer-Vision/02-Convolutional-Neural-Networks.md)
 - [Fashion MNIST ile Görüntü Sınıflandırma](06-Computer-Vision/03-Fashion-Mnist.md)
+- [Kedi-Köpek Sınıflandırma](06-Computer-Vision/04-Cat-Dog.md)
+
+### Transfer Öğrenme
+- [Modeli Yeniden Eğitme](07-Transfer-Learning/01-Retraining-Model.md)
+- [Eğitilmiş Model Kullanma](07-Transfer-Learning/02-Fine-Tuning.md)
 
 ## 🎯 Hedef Kitle
 Bu eğitim serisi:
