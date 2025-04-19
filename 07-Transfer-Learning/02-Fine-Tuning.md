@@ -294,3 +294,37 @@ print("Fine-tuning tamamlandı.")
 
 # Sonuç
 Bu eğitim, transfer learning ve fine-tuning tekniklerini kullanarak mevcut güçlü modellerden nasıl yararlanılacağını ve bunları kendi özel problemlerimize nasıl uyarlayabileceğimizi göstermektedir. Önceden eğitilmiş bir modelin genel özelliklerini kullanarak sıfırdan model eğitmenin zorluklarını aşabilir ve daha az veriyle daha yüksek doğruluk oranları elde edebiliriz. Ayrıca, fine-tuning aşamasıyla modelin belirli bir probleme daha iyi uyum sağlamasını sağlayarak performansı artırabiliriz. Bu süreç, derin öğrenme projelerinde zaman ve kaynak tasarrufu sağlarken, aynı zamanda daha etkili sonuçlar elde etmemize olanak tanır.
+
+# Bonus
+
+`ResNet50` modelini kullanarak resim tahmin edelim.
+
+```py
+from tensorflow.keras.applications.resnet50 import ResNet50
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
+import numpy as np
+from IPython.display import Image
+
+model =  ResNet50(weights="imagenet")
+
+img=image.load_img("dog.jpeg", target_size=(224,224))
+img=image.img_to_array(img)
+img=np.expand_dims(img, axis=0)
+img=preprocess_input(img)
+
+pred = model.predict(img)
+predictions = decode_predictions(pred, top=3)[0]
+for i, (imagenet_id, label, score) in enumerate(predictions):
+    print(f"{i + 1}: {label} ({score:.2f})")
+```
+
+- `img_height`, `img_width`: Kullanacağımız önceden eğitilmiş modelin (MobileNetV2) genellikle beklediği girdi boyutlarından biri (160x160).
+- `batch_size`: Her adımda işlenecek resim sayısı.
+- `data_dir`: Veri setinin bulunduğu klasör.
+- `model_save_path`: Sonuçta elde edilecek fine-tuned modelin kaydedileceği dosya adı.
+- `initial_epochs`: Transfer learning aşamasında (sadece yeni eklenen katmanları eğitirken) kullanılacak epoch sayısı.
+- `fine_tune_epochs`: Fine-tuning aşamasında (temel modelin bazı katmanları çözüldükten sonra) kullanılacak ek epoch sayısı.
+- `total_epochs`: Toplam eğitim süresi.
+- `base_learning_rate`: Yeni katmanları eğitirken kullanılacak öğrenme oranı.
+- `fine_tune_learning_rate`: Fine-tuning aşamasında kullanılacak daha düşük öğrenme oranı. Bu, önceden öğrenilmiş özelliklerin bozulmasını önlemek için önemlidir.
