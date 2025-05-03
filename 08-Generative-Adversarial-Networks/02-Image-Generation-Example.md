@@ -40,11 +40,13 @@ from IPython import display # Görüntüleri notebook'ta göstermek için
 
 ### Adım 2: Veri Setinin Yüklenmesi ve Hazırlanması
 
-`downloads/elma/` klasöründeki elma görüntülerini yükleyip, modelin işleyebileceği formata getireceğiz. Görüntüleri belirli bir boyuta (örneğin 64x64) yeniden boyutlandıracak ve piksel değerlerini -1 ile 1 arasına normalize edeceğiz.
+> Elma resimlerini [buradaki dosyayı](../Data/elma.zip) dosyadan elde edebilirsiniz. Resimleri `elma` isimli klasöre atıp devam ediniz.
+
+`elma/` klasöründeki elma görüntülerini yükleyip, modelin işleyebileceği formata getireceğiz. Görüntüleri belirli bir boyuta (örneğin 64x64) yeniden boyutlandıracak ve piksel değerlerini -1 ile 1 arasına normalize edeceğiz.
 
 ```python
 # Veri seti yolu ve parametreler
-DATASET_PATH = 'downloads/elma/'
+DATASET_PATH = 'elma/'
 IMG_WIDTH = 64
 IMG_HEIGHT = 64
 BUFFER_SIZE = 500 # Veri karıştırma tampon boyutu (veri setindeki örnek sayısına yakın olabilir)
