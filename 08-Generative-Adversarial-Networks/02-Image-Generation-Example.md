@@ -1,4 +1,4 @@
-## Örnek Uygulama: Elma Görüntüsü Üretme
+# Örnek Uygulama: Elma Görüntüsü Üretme
 
 Bu bölümde, GAN kullanarak `elma` klasöründeki elma görüntülerine benzer yeni elma görüntüleri üretmeye çalışan bir örnek yapacağız. Adımları takip ederek ve kod bloklarını çalıştırarak kendi GAN modelinizi eğitebilirsiniz.
 
@@ -14,7 +14,7 @@ Bu bölümde, GAN kullanarak `elma` klasöründeki elma görüntülerine benzer 
 
 ---
 
-### Adım 1: Kütüphanelerin Yüklenmesi
+## Adım 1: Kütüphanelerin Yüklenmesi
 
 Gerekli olan TensorFlow, Keras, NumPy, Matplotlib ve OS kütüphanelerini projemize dahil ediyoruz.
 
@@ -38,7 +38,7 @@ from IPython import display # Görüntüleri notebook'ta göstermek için
 
 ---
 
-### Adım 2: Veri Setinin Yüklenmesi ve Hazırlanması
+## Adım 2: Veri Setinin Yüklenmesi ve Hazırlanması
 
 > Elma resimlerini [buradaki dosyayı](../Data/elma.zip) dosyadan elde edebilirsiniz. Resimleri `elma` isimli klasöre atıp devam ediniz.
 
@@ -91,7 +91,7 @@ print("Veri seti hazırlandı. Örnek bir batch şekli:", next(iter(train_datase
 
 ---
 
-### Adım 3: Üretici (Generator) Modelinin Oluşturulması
+## Adım 3: Üretici (Generator) Modelinin Oluşturulması
 
 Rastgele gürültü vektörünü (latent space) girdi olarak alıp, hedef boyutta (64x64x3) bir elma görüntüsü üretmeye çalışacak modeli tanımlıyoruz. Genellikle `Dense` katman ile başlar ve `Conv2DTranspose` (bazen Deconvolution olarak da adlandırılır) katmanları ile görüntüyü büyütür.
 
@@ -161,7 +161,7 @@ plt.show()
 
 ---
 
-### Adım 4: Ayırt Edici (Discriminator) Modelinin Oluşturulması
+## Adım 4: Ayırt Edici (Discriminator) Modelinin Oluşturulması
 
 Girdi olarak bir görüntü (gerçek veya sahte, 64x64x3 boyutunda) alıp, bu görüntünün gerçek olma olasılığını tahmin eden (bir skor üreten) bir model tanımlıyoruz. Bu genellikle standart bir CNN (Convolutional Neural Network) sınıflandırma modeline benzer.
 
@@ -217,7 +217,7 @@ print("Eğitimsiz Ayırt Edici Skoru:", decision.numpy())
 
 ---
 
-### Adım 5: Kayıp Fonksiyonları ve Optimizasyon
+## Adım 5: Kayıp Fonksiyonları ve Optimizasyon
 
 Hem Üretici hem de Ayırt Edici için kayıp (loss) fonksiyonlarını ve bu kayıpları minimize edecek optimizasyon algoritmalarını tanımlamamız gerekiyor.
 
@@ -260,7 +260,7 @@ discriminator_optimizer = tf.keras.optimizers.Adam(learning_rate=1e-4, beta_1=0.
 
 ---
 
-### Adım 6: Eğitim Adımının Tanımlanması
+## Adım 6: Eğitim Adımının Tanımlanması
 
 Tek bir eğitim adımında hem Ayırt Edici'nin hem de Üretici'nin nasıl güncelleneceğini tanımlayan fonksiyonu yazıyoruz. `@tf.function` dekoratörü, bu Python fonksiyonunu optimize edilmiş bir TensorFlow grafiğine dönüştürerek eğitimi hızlandırır.
 
@@ -309,7 +309,7 @@ def train_step(images):
 
 ---
 
-### Adım 7: Eğitim Döngüsü ve Görüntü Üretme
+## Adım 7: Eğitim Döngüsü ve Görüntü Üretme
 
 Modeli belirtilen sayıda epoch boyunca eğitecek ana döngüyü ve eğitim sırasında belirli aralıklarla örnek görüntüler üretecek yardımcı fonksiyonu tanımlıyoruz.
 
@@ -420,7 +420,7 @@ Artık bu kod bloklarını sırasıyla çalıştırarak kendi elma görüntüler
 
 ---
 
-### Adım 8: Eğitilmiş Modelden Yeni Görüntü Üretme
+## Adım 8: Eğitilmiş Modelden Yeni Görüntü Üretme
 
 Eğitim tamamlandıktan sonra, eğitilmiş `generator` modelini kullanarak istediğiniz zaman yeni elma görüntüleri üretebilirsiniz. Bunun için tek yapmanız gereken rastgele bir gürültü vektörü oluşturup modele vermektir.
 
@@ -446,3 +446,8 @@ plt.show()
 *   `generator(new_noise, training=False)`: Eğitilmiş üreticiyi kullanarak gürültüden görüntü üretir. `training=False` modunda çalıştırmak önemlidir.
 *   `(new_generated_image[0] + 1) / 2.0`: Üretilen görüntünün piksel değerlerini [-1, 1] aralığından [0, 1] aralığına dönüştürür, böylece `matplotlib` ile doğru şekilde görüntülenebilir.
 *   `plt.imshow(...)`: Görüntüyü ekranda gösterir.
+
+
+# Sonuç
+
+Eğitim süreci tamamlandıktan sonra, GAN modeliniz artık yeni elma görüntüleri üretebilir hale gelmiştir. Bu süreçte, Üretici modelinin rastgele gürültü vektörlerinden gerçekçi görüntüler oluşturmayı öğrenmesi ve Ayırt Edici modelinin bu görüntüleri gerçek olanlardan ayırt etmeye çalışması, modelin performansını artırmıştır. Eğitim sırasında kayıpların dengeli bir şekilde azaldığından emin olun ve gerektiğinde hiperparametreleri ayarlayarak daha iyi sonuçlar elde etmeye çalışın. Artık eğitilmiş modelinizi kullanarak istediğiniz kadar yeni elma görüntüsü üretebilir ve bu görüntüleri projelerinizde veya analizlerinizde kullanabilirsiniz. GAN'lar ile yaratıcı ve yenilikçi çözümler geliştirmek için bu temel adımları farklı veri setlerine ve uygulamalara uyarlayabilirsiniz.
