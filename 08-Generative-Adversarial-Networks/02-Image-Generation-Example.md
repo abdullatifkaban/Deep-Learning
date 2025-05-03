@@ -415,3 +415,32 @@ plt.show()
 ---
 
 Artık bu kod bloklarını sırasıyla çalıştırarak kendi elma görüntülerinizi üreten GAN modelinizi eğitebilirsiniz! Unutmayın, iyi sonuçlar almak için `EPOCHS` sayısını artırmanız ve belki de model mimarisi veya hiperparametrelerle (öğrenme oranı, batch boyutu vb.) oynamanız gerekebilir.
+
+---
+
+### Adım 8: Eğitilmiş Modelden Yeni Görüntü Üretme
+
+Eğitim tamamlandıktan sonra, eğitilmiş `generator` modelini kullanarak istediğiniz zaman yeni elma görüntüleri üretebilirsiniz. Bunun için tek yapmanız gereken rastgele bir gürültü vektörü oluşturup modele vermektir.
+
+```python
+# Yeni bir rastgele gürültü vektörü oluştur
+new_noise = tf.random.normal([1, LATENT_DIM])
+
+# Modeli kullanarak görüntüyü üret (training=False unutmayın!)
+new_generated_image = generator(new_noise, training=False)
+
+# Görüntüyü görselleştirmek için 0-1 aralığına getir
+img_to_display = (new_generated_image[0] + 1) / 2.0
+
+# Görüntüyü göster
+plt.imshow(img_to_display)
+plt.title("Eğitilmiş Model Tarafından Üretilen Yeni Elma")
+plt.axis('off')
+plt.show()
+```
+
+**Açıklama:**
+*   `tf.random.normal([1, LATENT_DIM])`: Tek bir örnek (`[1, ...]`) için rastgele gürültü vektörü oluşturur.
+*   `generator(new_noise, training=False)`: Eğitilmiş üreticiyi kullanarak gürültüden görüntü üretir. `training=False` modunda çalıştırmak önemlidir.
+*   `(new_generated_image[0] + 1) / 2.0`: Üretilen görüntünün piksel değerlerini [-1, 1] aralığından [0, 1] aralığına dönüştürür, böylece `matplotlib` ile doğru şekilde görüntülenebilir.
+*   `plt.imshow(...)`: Görüntüyü ekranda gösterir.

@@ -1,6 +1,6 @@
-# Bölüm 8: Çekişmeli Üretici Ağlar (Generative Adversarial Networks - GANs)
+# Çekişmeli Üretici Ağlar (Generative Adversarial Networks - GANs)
 
-## 8.1 GAN'lara Giriş
+## GAN'lara Giriş
 
 Çekişmeli Üretici Ağlar (GAN'lar), Ian Goodfellow ve arkadaşları tarafından 2014 yılında tanıtılan, denetimsiz öğrenme (unsupervised learning) sınıfına giren güçlü bir derin öğrenme modelidir. GAN'ların temel amacı, mevcut veri setine benzer yeni veriler üretmektir.
 
@@ -15,6 +15,10 @@ Bu iki ağ, birbirleriyle sürekli bir "oyun" veya "çekişme" halindedir:
 *   Ayırt Edici, gerçek ve sahte verileri ayırt etme konusunda giderek daha iyi olmaya çalışır.
 
 Bu çekişmeli süreç sonunda, Üretici oldukça gerçekçi veriler üretebilen bir model haline gelir.
+
+![](https://pg-p.ctme.caltech.edu/wp-content/uploads/sites/4/2024/06/what-is-generative-adversarial-networks.jpg)
+
+[Kaynak](https://pg-p.ctme.caltech.edu/wp-content/uploads/sites/4/2024/06/what-is-generative-adversarial-networks.jpg)
 
 **Kullanım Alanları:**
 
