@@ -1,11 +1,11 @@
 ## 8.2 Örnek Uygulama: Elma Görüntüsü Üretme
 
-Bu bölümde, GAN kullanarak `downloads/elma/` klasöründeki elma görüntülerine benzer yeni elma görüntüleri üretmeye çalışan bir örnek yapacağız. Adımları takip ederek ve kod bloklarını çalıştırarak kendi GAN modelinizi eğitebilirsiniz.
+Bu bölümde, GAN kullanarak `elma` klasöründeki elma görüntülerine benzer yeni elma görüntüleri üretmeye çalışan bir örnek yapacağız. Adımları takip ederek ve kod bloklarını çalıştırarak kendi GAN modelinizi eğitebilirsiniz.
 
 **Genel Akış:**
 
 1.  Gerekli kütüphaneleri yükleyeceğiz.
-2.  `downloads/elma/` klasöründeki elma görüntülerini yükleyip hazırlayacağız.
+2.  `elma/` klasöründeki elma görüntülerini yükleyip hazırlayacağız.
 3.  Üretici (Generator) modelini tanımlayacağız.
 4.  Ayırt Edici (Discriminator) modelini tanımlayacağız.
 5.  Modeller için kayıp fonksiyonlarını ve optimizasyon algoritmalarını belirleyeceğiz.
