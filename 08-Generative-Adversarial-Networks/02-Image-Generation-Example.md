@@ -1,4 +1,4 @@
-## 8.2 Örnek Uygulama: Elma Görüntüsü Üretme
+## Örnek Uygulama: Elma Görüntüsü Üretme
 
 Bu bölümde, GAN kullanarak `elma` klasöründeki elma görüntülerine benzer yeni elma görüntüleri üretmeye çalışan bir örnek yapacağız. Adımları takip ederek ve kod bloklarını çalıştırarak kendi GAN modelinizi eğitebilirsiniz.
 

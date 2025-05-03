@@ -41,6 +41,10 @@ Bu repository, derin öğrenme konusunda kapsamlı bir eğitim serisi sunmaktad�
 - [Modeli Yeniden Eğitme](07-Transfer-Learning/01-Retraining-Model.md)
 - [Eğitilmiş Model Kullanma](07-Transfer-Learning/02-Fine-Tuning.md)
 
+### Çekişmeli Üretici Ağlar (GANs)
+- [GAN'lara Giriş](08-Generative-Adversarial-Networks/01-Introduction-GANs.md)
+- [Yeni Resim Üreten GAN](08-Generative-Adversarial-Networks/02-Image-Generation-Example.md)
+
 ## 🎯 Hedef Kitle
 Bu eğitim serisi:
 - Derin öğrenmeye yeni başlayanlar
