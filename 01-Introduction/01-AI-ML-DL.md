@@ -58,6 +58,7 @@ Bu hiyerarşik yapı, bu üç kavramın birbiriyle olan ilişkisini göstermekte
 ### 1950'ler
 - 1950: Alan Turing'in "Computing Machinery and Intelligence" makalesi
 - 1956: Dartmouth Konferansı - "Yapay Zeka" teriminin ortaya çıkışı
+- 1959: Cahit Arf'ın "Yapay Zekz" konulu konferansı
 
 ### 1960'lar ve 1970'ler
 - İlk uzman sistemler
